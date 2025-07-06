@@ -2,14 +2,24 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
-from ai_agent.agents.flight_status_agent import FlightStatusAgent
-from ai_agent.state.conversation_state import ConversationState
 
-def test_flight_status_agent():
-    agent = FlightStatusAgent()
-    state = ConversationState("What’s the current status of flight AI202 from Delhi to Mumbai?")
+import pytest
+from src.ai_agent.agents.flight_status_agent import FlightStatusAgent
+from src.ai_agent.state.conversation_state import ConversationState
+
+
+@pytest.fixture
+def agent():
+    return FlightStatusAgent()
+
+@pytest.mark.parametrize("user_query", [
+    "Can you tell me the flight status of AI302?",
+    "What's the status of my flight from Mumbai to Delhi?"
+])
+def test_flight_status_agent(agent, user_query):
+    state = ConversationState(user_query)
     new_state = agent.run(state)
-    print("Agent Response:", new_state.agent_response)
 
-if __name__ == "__main__":
-    test_flight_status_agent()
+    assert new_state.agent_response is not None
+    assert isinstance(new_state.agent_response, str)
+    print("\n✅ Agent response:", new_state.agent_response)

@@ -15,10 +15,7 @@ class MistralLLM(BaseLLM):
         self.max_tokens = max_tokens
         self.temperature = temperature
 
-    def chat(self, prompt: str) -> str:
-        messages = [
-        {"role": "user", "content": prompt}
-        ]
+    def chat(self, messages: list[dict]) -> str:
         response = self.llm.create_chat_completion(messages=messages)
         return response['choices'][0]['message']['content']
 

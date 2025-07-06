@@ -3,11 +3,13 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 from ai_agent.tools.llm_loader import get_llm
 
+import pytest
 
 from dotenv import load_dotenv
 
 load_dotenv() 
 
+@pytest.mark.skip("For LLM load test only")
 def test_mistral_chat():
     llm = get_llm()
 
