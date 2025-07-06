@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Flask Chat - Airline Customer Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .chat-container {
+            flex: 2;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            max-height: 90vh;
+        }
+        
+        .session-panel {
+            flex: 1;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .session-header {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .session-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        
+        .user-message {
+            background: #e3f2fd;
+            margin-left: auto;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .bot-message {
+            background: #f1f8e9;
+            margin-right: auto;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .message-content {
+            margin-bottom: 5px;
+        }
+        
+        .message-meta {
+            font-size: 0.8em;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .intent-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            margin-left: 5px;
+        }
+        
+        /* Airline/Travel Industry Intent Categories */
+        .intent-booking { background: #d4edda; color: #155724; }
+        .intent-cancellation { background: #f8d7da; color: #721c24; }
+        .intent-inquiry { background: #d1ecf1; color: #0c5460; }
+        .intent-complaint { background: #f5c6cb; color: #721c24; }
+        .intent-feedback { background: #fff3cd; color: #856404; }
+        .intent-support { background: #cce5ff; color: #004085; }
+        .intent-refund { background: #ffebee; color: #c62828; }
+        .intent-change { background: #e8f5e8; color: #2e7d32; }
+        .intent-upgrade { background: #f3e5f5; color: #7b1fa2; }
+        .intent-reschedule { background: #e1f5fe; color: #0277bd; }
+        .intent-check-in { background: #e8f5e8; color: #388e3c; }
+        .intent-boarding { background: #fff8e1; color: #f57f17; }
+        .intent-seating { background: #fce4ec; color: #c2185b; }
+        .intent-amenities { background: #f1f8e9; color: #558b2f; }
+        .intent-meals { background: #fff3e0; color: #ef6c00; }
+        .intent-information { background: #e3f2fd; color: #1565c0; }
+        .intent-loyalty-programs { background: #f9fbe7; color: #827717; }
+        .intent-rewards { background: #fff9c4; color: #9e9d24; }
+        .intent-promotions { background: #ffeaa7; color: #d63031; }
+        .intent-offers { background: #fab1a0; color: #e17055; }
+        .intent-discounts { background: #fd79a8; color: #e84393; }
+        .intent-policies { background: #fdcb6e; color: #e17055; }
+        .intent-procedures { background: #e17055; color: #ffffff; }
+        .intent-regulations { background: #636e72; color: #ffffff; }
+        .intent-security { background: #74b9ff; color: #0984e3; }
+        .intent-safety { background: #00b894; color: #00cec9; }
+        
+        .chat-input {
+            background: white;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 0 0 15px 15px;
+        }
+        
+        .session-info {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        
+        .session-card {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .session-id {
+            font-family: 'Courier New', monospace;
+            background: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .stat-item {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+        
+        .stat-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #495057;
+        }
+        
+        .stat-label {
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+        
+        .conversation-history {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            background: #f8f9fa;
+        }
+        
+        .history-item {
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            font-size: 0.85em;
+        }
+        
+        .history-user {
+            background: #e3f2fd;
+            margin-left: 10px;
+        }
+        
+        .history-bot {
+            background: #f1f8e9;
+            margin-right: 10px;
+        }
+        
+        .btn-clear {
+            background: #dc3545;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        
+        .btn-clear:hover {
+            background: #c82333;
+            color: white;
+        }
+        
+        .confidence-bar {
+            width: 100%;
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 3px;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745 0%, #ffc107 50%, #dc3545 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .typing-indicator {
+            display: none;
+            padding: 10px;
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        .typing-indicator::after {
+            content: '...';
+            animation: typing 1.5s infinite;
+        }
+        
+        @keyframes typing {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+        
+        .message-count {
+            font-size: 0.8em;
+            color: #6c757d;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .session-actions {
+            padding: 15px;
+            border-top: 1px solid #dee2e6;
+            background: #f8f9fa;
+        }
+        
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                padding: 10px;
+            }
+            
+            .chat-container, .session-panel {
+                max-height: 50vh;
+            }
+            
+            .message {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Main Chat Container -->
+        <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <h4 class="mb-0">
+                    <i class="fas fa-comments"></i> Enhanced Flask Chat
+                    <small class="float-end">
+                        <i class="fas fa-database"></i> SQLite Backend
+                    </small>
+                </h4>
+            </div>
+            
+            <!-- Session Info -->
+            <div class="session-info">
+                <div class="row">
+                    <div class="col-md-8">
+                        <strong>Session:</strong> {{ stats.session_id[:8] }}...
+                        <span class="ms-3">
+                            <strong>Messages:</strong> {{ stats.message_count }}
+                        </span>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <a href="/api/clear_session" class="btn-clear" onclick="return confirm('Clear this session?')">
+                            <i class="fas fa-trash"></i> Clear Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                {% if messages|length == 0 %}
+                    <div class="text-center text-muted py-4">
+                        <i class="fas fa-comment-dots fa-3x mb-3"></i>
+                        <p>No messages yet. Start a conversation!</p>
+                        <small>Try saying: "Book a flight", "Cancel booking", "Check-in help", or "Refund request"</small>
+                    </div>
+                {% else %}
+                    {% for message in messages %}
+                        <div class="message {{ 'user-message' if message.role == 'user' else 'bot-message' }}">
+                            <div class="message-content">
+                                <strong>{{ message.role.capitalize() }}:</strong> {{ message.content }}
+                            </div>
+                            <div class="message-meta">
+                                {{ message.timestamp }}
+                                {% if message.intent %}
+                                    <span class="intent-badge intent-{{ message.intent.lower().replace(' ', '-') }}">
+                                        {{ message.intent.capitalize() }}
+                                    </span>
+                                {% endif %}
+                                {% if message.confidence %}
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: {{ (message.confidence * 100)|round }}%"></div>
+                                    </div>
+                                    <small>Confidence: {{ (message.confidence * 100)|round }}%</small>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                
+                <!-- Typing Indicator -->
+                <div class="typing-indicator" id="typingIndicator">
+                    Bot is typing
+                </div>
+            </div>
+            
+            <!-- Message Count -->
+            {% if messages|length > 0 %}
+                <div class="message-count">
+                    {{ messages|length }} message{{ 's' if messages|length != 1 else '' }} in this session
+                </div>
+            {% endif %}
+            
+            <!-- Chat Input -->
+            <div class="chat-input">
+                <form method="POST" onsubmit="showTyping()">
+                    <div class="input-group">
+                        <input 
+                            name="message" 
+                            class="form-control" 
+                            placeholder="Type your message..." 
+                            required
+                            autocomplete="off"
+                            id="messageInput"
+                        >
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Quick Actions -->
+                <div class="mt-2">
+                    <small class="text-muted">Quick tests:</small>
+                    <button class="btn btn-sm btn-outline-secondary ms-1" onclick="sendQuickMessage('Book a flight')">
+                        Book Flight
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary ms-1" onclick="sendQuickMessage('Cancel booking')">
+                        Cancel
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary ms-1" onclick="sendQuickMessage('Check-in help')">
+                        Check-in
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary ms-1" onclick="sendQuickMessage('Refund request')">
+                        Refund
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary ms-1" onclick="sendQuickMessage('Seat upgrade')">
+                        Upgrade
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary ms-1" onclick="sendQuickMessage('Meal options')">
+                        Meals
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Session Management Panel -->
+        <div class="session-panel">
+            <!-- Session Header -->
+            <div class="session-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-user-circle"></i> Session Management
+                </h5>
+            </div>
+            
+            <!-- Session Content -->
+            <div class="session-content">
+                <!-- Current Session Info -->
+                <div class="session-card">
+                    <h6><i class="fas fa-id-card"></i> Current Session</h6>
+                    <div class="session-id">{{ stats.session_id }}</div>
+                    <div class="mt-2">
+                        <small class="text-muted">Created:</small> {{ stats.created_at }}<br>
+                        <small class="text-muted">Last Activity:</small> {{ stats.last_activity }}
+                    </div>
+                </div>
+                
+                <!-- Session Statistics -->
+                <div class="session-card">
+                    <h6><i class="fas fa-chart-bar"></i> Session Statistics</h6>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">{{ stats.message_count }}</div>
+                            <div class="stat-label">Messages</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">{{ stats.user_messages }}</div>
+                            <div class="stat-label">User</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">{{ stats.bot_messages }}</div>
+                            <div class="stat-label">Bot</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">{{ stats.avg_confidence|round(1) if stats.avg_confidence else 'N/A' }}%</div>
+                            <div class="stat-label">Avg Confidence</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Intent Distribution -->
+                {% if stats.intent_distribution %}
+                <div class="session-card">
+                    <h6><i class="fas fa-tags"></i> Intent Distribution</h6>
+                    {% for intent in stats.intent_distribution %}
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="intent-badge intent-{{ intent.intent.lower().replace(' ', '-') }}">
+                                {{ intent.intent }}
+                            </span>
+                            <small>{{ intent.count }}</small>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <!-- Conversation History -->
+                <div class="session-card">
+                    <h6><i class="fas fa-history"></i> Conversation History</h6>
+                    <div class="conversation-history">
+                        {% if messages|length == 0 %}
+                            <div class="text-center text-muted py-3">
+                                <i class="fas fa-comment-slash"></i><br>
+                                <small>No messages yet</small>
+                            </div>
+                        {% else %}
+                            {% for message in messages[-10:] %}
+                                <div class="history-item {{ 'history-user' if message.role == 'user' else 'history-bot' }}">
+                                    <strong>{{ message.role.capitalize() }}:</strong> 
+                                    {{ message.content[:50] }}{{ '...' if message.content|length > 50 else '' }}
+                                    {% if message.intent %}
+                                        <span class="intent-badge intent-{{ message.intent.lower().replace(' ', '-') }}" style="font-size: 0.6em;">
+                                            {{ message.intent }}
+                                        </span>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <!-- Session Health -->
+                <div class="session-card">
+                    <h6><i class="fas fa-heartbeat"></i> Session Health</h6>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="text-success" style="font-size: 1.5em;">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <small>Active</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="text-info" style="font-size: 1.5em;">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <small>Persistent</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Session Actions -->
+            <div class="session-actions">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary btn-sm" onclick="refreshSessionData()">
+                        <i class="fas fa-sync-alt"></i> Refresh Data
+                    </button>
+                    <button class="btn btn-outline-info btn-sm" onclick="exportSession()">
+                        <i class="fas fa-download"></i> Export Session
+                    </button>
+                    <a href="/api/clear_session" class="btn btn-outline-danger btn-sm" onclick="return confirm('Clear this session?')">
+                        <i class="fas fa-trash"></i> Clear Session
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto-scroll to bottom of messages
+        function scrollToBottom() {
+            const chatMessages = document.getElementById('chatMessages');
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Show typing indicator
+        function showTyping() {
+            document.getElementById('typingIndicator').style.display = 'block';
+            scrollToBottom();
+        }
+        
+        // Send quick message
+        function sendQuickMessage(message) {
+            document.getElementById('messageInput').value = message;
+            document.querySelector('form').submit();
+        }
+        
+        // Refresh session data
+        function refreshSessionData() {
+            location.reload();
+        }
+        
+        // Export session data
+        function exportSession() {
+            const sessionData = {
+                session_id: '{{ stats.session_id }}',
+                created_at: '{{ stats.created_at }}',
+                message_count: {{ stats.message_count }},
+                messages: [
+                    {% for message in messages %}
+                    {
+                        role: '{{ message.role }}',
+                        content: '{{ message.content|replace("'", "\\'") }}',
+                        intent: '{{ message.intent or "" }}',
+                        confidence: {{ message.confidence or 0 }},
+                        timestamp: '{{ message.timestamp }}'
+                    }{{ ',' if not loop.last else '' }}
+                    {% endfor %}
+                ]
+            };
+            
+            const blob = new Blob([JSON.stringify(sessionData, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `session_${sessionData.session_id.substring(0, 8)}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            scrollToBottom();
+            
+            // Focus on input
+            document.getElementById('messageInput').focus();
+            
+            // Add keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.key === 'l') {
+                    e.preventDefault();
+                    window.location.href = '/api/clear_session';
+                }
+            });
+            
+            // Auto-refresh session data every 30 seconds
+            setInterval(function() {
+                // Only refresh if there are no active form submissions
+                if (!document.querySelector('form').checkValidity || document.querySelector('form').checkValidity()) {
+                    // Subtle refresh of session stats without full page reload
+                    console.log('Session data auto-refresh (background)');
+                }
+            }, 30000);
+        });
+    </script>
+</body>
+</html> 

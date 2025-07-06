@@ -1,0 +1,1180 @@
+2025-07-06 10:14:14,791 - INFO - Database initialized successfully
+2025-07-06 10:14:14,993 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.172.135.43:5000
+2025-07-06 10:14:14,993 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 10:14:14,995 - INFO -  * Restarting with stat
+2025-07-06 10:14:15,123 - INFO - Database initialized successfully
+2025-07-06 10:14:15,148 - WARNING -  * Debugger is active!
+2025-07-06 10:14:15,155 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:14:21,179 - INFO - New session created: 855afc97-4b13-445c-bc21-756cbc9229cf
+2025-07-06 10:14:21,187 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,190 - INFO - New session created: d6cc9adf-7572-4098-826f-2bb50cc4d5bc
+2025-07-06 10:14:21,192 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,195 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Test message 6a2c882c
+2025-07-06 10:14:21,196 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I understand you said: 'Test message 6a2c882c'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:14:21,196 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,201 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,204 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Hello there!
+2025-07-06 10:14:21,204 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Hello! How can I help you today? (Session: d6cc9adf...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:14:21,204 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,207 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,210 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I need help with my account
+2025-07-06 10:14:21,211 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:14:21,211 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,214 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,216 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I want a refund
+2025-07-06 10:14:21,217 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:14:21,217 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,221 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,224 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Goodbye
+2025-07-06 10:14:21,224 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:14:21,225 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,227 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,229 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Random message
+2025-07-06 10:14:21,230 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I understand you said: 'Random message'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:14:21,230 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,233 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,236 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET /api/stats HTTP/1.1" 200 -
+2025-07-06 10:14:21,238 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Session 1 message be05083d
+2025-07-06 10:14:21,239 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I understand you said: 'Session 1 message be05083d'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:14:21,239 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,241 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,243 - INFO - New session created: 4f5c5477-18d6-41da-bb31-8d81ebb0c999
+2025-07-06 10:14:21,244 - INFO - Message received from 4f5c5477-18d6-41da-bb31-8d81ebb0c999: Session 2 message ee40c84c
+2025-07-06 10:14:21,244 - INFO - Bot response sent to 4f5c5477-18d6-41da-bb31-8d81ebb0c999: I understand you said: 'Session 2 message ee40c84c'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:14:21,244 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,246 - INFO - New session created: 215bae34-00b5-4e51-90be-89815b238eee
+2025-07-06 10:14:21,247 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,249 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,251 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,253 - INFO - Message received from d6cc9adf-7572-4098-826f-2bb50cc4d5bc: Clear test message b336a83c
+2025-07-06 10:14:21,254 - INFO - Bot response sent to d6cc9adf-7572-4098-826f-2bb50cc4d5bc: I understand you said: 'Clear test message b336a83c'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:14:21,254 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,256 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,258 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,261 - INFO - Cleared session: d6cc9adf-7572-4098-826f-2bb50cc4d5bc
+2025-07-06 10:14:21,261 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:14:21,262 - INFO - New session created: fb91c2f2-83d9-4643-8efa-6f56e0f7477d
+2025-07-06 10:14:21,263 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:21,265 - INFO - 127.0.0.1 - - [06/Jul/2025 10:14:21] "GET / HTTP/1.1" 200 -
+2025-07-06 10:14:28,562 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/test_enhanced_chat.py', reloading
+2025-07-06 10:14:28,581 - INFO -  * Restarting with stat
+2025-07-06 10:14:28,721 - INFO - Database initialized successfully
+2025-07-06 10:14:28,741 - WARNING -  * Debugger is active!
+2025-07-06 10:14:28,752 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:14:29,814 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/test_enhanced_chat.py', reloading
+2025-07-06 10:14:29,834 - INFO -  * Restarting with stat
+2025-07-06 10:14:29,973 - INFO - Database initialized successfully
+2025-07-06 10:14:29,994 - WARNING -  * Debugger is active!
+2025-07-06 10:14:30,007 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:15:22,185 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/test_enhanced_chat.py', reloading
+2025-07-06 10:15:22,204 - INFO -  * Restarting with stat
+2025-07-06 10:15:22,345 - INFO - Database initialized successfully
+2025-07-06 10:15:22,368 - WARNING -  * Debugger is active!
+2025-07-06 10:15:22,374 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:15:23,437 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/test_enhanced_chat.py', reloading
+2025-07-06 10:15:23,459 - INFO -  * Restarting with stat
+2025-07-06 10:15:23,596 - INFO - Database initialized successfully
+2025-07-06 10:15:23,622 - WARNING -  * Debugger is active!
+2025-07-06 10:15:23,633 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:15:29,714 - INFO - New session created: 05597fa6-3c53-4a4c-a175-8a61b1d3e81e
+2025-07-06 10:15:29,722 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,725 - INFO - New session created: c24ce679-b22e-4f29-9897-fd15fd9bbb73
+2025-07-06 10:15:29,727 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,730 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: Test message b6b71d42
+2025-07-06 10:15:29,731 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: I understand you said: 'Test message b6b71d42'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:15:29,731 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,734 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,737 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: Hello there!
+2025-07-06 10:15:29,737 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: Hello! How can I help you today? (Session: c24ce679...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:15:29,738 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,740 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,742 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: I need help with my account
+2025-07-06 10:15:29,743 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:15:29,743 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,745 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,748 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: I want a refund
+2025-07-06 10:15:29,748 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:15:29,749 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,752 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,754 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: Goodbye
+2025-07-06 10:15:29,755 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:15:29,755 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,757 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,760 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: Random message
+2025-07-06 10:15:29,761 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: I understand you said: 'Random message'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:15:29,761 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,763 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,765 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET /api/stats HTTP/1.1" 200 -
+2025-07-06 10:15:29,768 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: Session 1 message d1061aac
+2025-07-06 10:15:29,769 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: I understand you said: 'Session 1 message d1061aac'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:15:29,769 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,772 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,774 - INFO - New session created: 42193241-1c5d-4515-8a20-914a7f685d39
+2025-07-06 10:15:29,775 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,777 - INFO - Message received from 42193241-1c5d-4515-8a20-914a7f685d39: Session 2 message dac32559
+2025-07-06 10:15:29,778 - INFO - Bot response sent to 42193241-1c5d-4515-8a20-914a7f685d39: I understand you said: 'Session 2 message dac32559'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:15:29,779 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,781 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,784 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,786 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,788 - INFO - Message received from c24ce679-b22e-4f29-9897-fd15fd9bbb73: Clear test message 3b3d70dc
+2025-07-06 10:15:29,789 - INFO - Bot response sent to c24ce679-b22e-4f29-9897-fd15fd9bbb73: I understand you said: 'Clear test message 3b3d70dc'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:15:29,789 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,792 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,794 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,797 - INFO - Cleared session: c24ce679-b22e-4f29-9897-fd15fd9bbb73
+2025-07-06 10:15:29,797 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:15:29,799 - INFO - New session created: 3f5b1496-aea7-4332-8afc-ec8538655fd6
+2025-07-06 10:15:29,801 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:15:29,804 - INFO - 127.0.0.1 - - [06/Jul/2025 10:15:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:18:54,305 - INFO - New session created: cbe437ed-0473-4f4f-ad80-c8833d807b1d
+2025-07-06 10:18:54,314 - ERROR - Error tracking new session: no such table: sessions
+2025-07-06 10:18:54,314 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:18:54,315 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:54] "GET / HTTP/1.1" 200 -
+2025-07-06 10:18:54,561 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 10:18:56,479 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:18:56,480 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Hello
+2025-07-06 10:18:56,480 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:18:56,480 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:56] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:18:56,489 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:18:56,490 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:18:56,490 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:56] "GET / HTTP/1.1" 200 -
+2025-07-06 10:18:59,076 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:18:59,077 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Hello
+2025-07-06 10:18:59,077 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:18:59,078 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:18:59,084 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:18:59,084 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:18:59,085 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:18:59,710 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:18:59,710 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Hello
+2025-07-06 10:18:59,711 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:18:59,712 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:18:59,715 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:18:59,716 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:18:59,716 - INFO - 127.0.0.1 - - [06/Jul/2025 10:18:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:03,120 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:03,120 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: hi
+2025-07-06 10:19:03,120 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:19:03,120 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:03] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:19:03,126 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:03,127 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:03,127 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:11,833 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:11,833 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Goodbye
+2025-07-06 10:19:11,833 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:19:11,833 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:11] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:19:11,840 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:11,840 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:11,840 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:11] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:25,422 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:25,423 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Goodbye
+2025-07-06 10:19:25,424 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:19:25,425 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:25] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:19:25,428 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:25,430 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:25,431 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:25] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:26,119 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:26,122 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Goodbye
+2025-07-06 10:19:26,123 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:19:26,123 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:26] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:19:26,126 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:26,126 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:26,127 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:26] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:26,285 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:26,285 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Goodbye
+2025-07-06 10:19:26,287 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:19:26,287 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:26] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:19:26,292 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:26,293 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:26,293 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:26] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:26,476 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:26,476 - INFO - Message received from cbe437ed-0473-4f4f-ad80-c8833d807b1d: Goodbye
+2025-07-06 10:19:26,476 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:19:26,476 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:26] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:19:26,479 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:26,479 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:26,480 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:26] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:28,837 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:28,838 - ERROR - Error clearing session: no such table: messages
+2025-07-06 10:19:28,838 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:28] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:19:28,844 - INFO - New session created: 92530ef7-ebd7-44ca-b123-ef678dc19fba
+2025-07-06 10:19:28,845 - ERROR - Error tracking new session: no such table: sessions
+2025-07-06 10:19:28,846 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:28,846 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:31,307 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:31,307 - ERROR - Error clearing session: no such table: messages
+2025-07-06 10:19:31,307 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:31] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:19:31,314 - INFO - New session created: 0472310e-8ec1-404b-a223-25ff7ab0ff43
+2025-07-06 10:19:31,315 - ERROR - Error tracking new session: no such table: sessions
+2025-07-06 10:19:31,315 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:31,315 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:19:34,082 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:34,082 - INFO - Message received from 0472310e-8ec1-404b-a223-25ff7ab0ff43: hi
+2025-07-06 10:19:34,083 - ERROR - Error processing message: no such table: messages
+2025-07-06 10:19:34,083 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:34] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:19:34,090 - ERROR - Error updating session activity: no such table: sessions
+2025-07-06 10:19:34,091 - ERROR - Error retrieving messages: no such table: messages
+2025-07-06 10:19:34,091 - INFO - 127.0.0.1 - - [06/Jul/2025 10:19:34] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:11,033 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/enhanced_ui.py', reloading
+2025-07-06 10:22:11,053 - INFO -  * Restarting with stat
+2025-07-06 10:22:11,227 - INFO - Database initialized successfully
+2025-07-06 10:22:11,254 - WARNING -  * Debugger is active!
+2025-07-06 10:22:11,269 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:22:46,597 - INFO - New session created: 0bc93a6d-a0de-4ae5-8c70-bb42b3409d11
+2025-07-06 10:22:46,605 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,608 - INFO - New session created: 4baea59e-5cc2-485f-8092-6978a76fa768
+2025-07-06 10:22:46,609 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,612 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: Test message 34f06e7f
+2025-07-06 10:22:46,614 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: I understand you said: 'Test message 34f06e7f'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:22:46,614 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,617 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,619 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: Hello there!
+2025-07-06 10:22:46,620 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: Hello! How can I help you today? (Session: 4baea59e...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:22:46,620 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,622 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,624 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: I need help with my account
+2025-07-06 10:22:46,625 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:22:46,625 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,628 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,630 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: I want a refund
+2025-07-06 10:22:46,631 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:22:46,631 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,634 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,637 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: Goodbye
+2025-07-06 10:22:46,639 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:22:46,639 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,642 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,645 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: Random message
+2025-07-06 10:22:46,646 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: I understand you said: 'Random message'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:22:46,646 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,649 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,651 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET /api/stats HTTP/1.1" 200 -
+2025-07-06 10:22:46,653 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: Session 1 message fcc10fa8
+2025-07-06 10:22:46,654 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: I understand you said: 'Session 1 message fcc10fa8'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:22:46,654 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,657 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,659 - INFO - New session created: 65d73cd5-ceca-42a0-82ae-66afc47b9d68
+2025-07-06 10:22:46,660 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,662 - INFO - Message received from 65d73cd5-ceca-42a0-82ae-66afc47b9d68: Session 2 message 6622052a
+2025-07-06 10:22:46,663 - INFO - Bot response sent to 65d73cd5-ceca-42a0-82ae-66afc47b9d68: I understand you said: 'Session 2 message 6622052a'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:22:46,663 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,666 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,669 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,672 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,674 - INFO - Message received from 4baea59e-5cc2-485f-8092-6978a76fa768: Clear test message 0f67caeb
+2025-07-06 10:22:46,675 - INFO - Bot response sent to 4baea59e-5cc2-485f-8092-6978a76fa768: I understand you said: 'Clear test message 0f67caeb'. How can I assist you further? (Intent: general, Confidence: 0.6)
+2025-07-06 10:22:46,675 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,677 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,680 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,682 - INFO - Cleared session: 4baea59e-5cc2-485f-8092-6978a76fa768
+2025-07-06 10:22:46,682 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:22:46,684 - INFO - New session created: cd8459bb-4660-4eee-bde2-98bb35d78ddc
+2025-07-06 10:22:46,685 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:22:46,686 - INFO - 127.0.0.1 - - [06/Jul/2025 10:22:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:23:07,408 - INFO - New session created: d29a5afc-f58e-4e26-a9cf-2d393eec993d
+2025-07-06 10:23:07,409 - INFO - Message received from d29a5afc-f58e-4e26-a9cf-2d393eec993d: Hello there
+2025-07-06 10:23:07,410 - INFO - Bot response sent to d29a5afc-f58e-4e26-a9cf-2d393eec993d: Hello! How can I help you today? (Session: d29a5afc...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:23:07,410 - INFO - 127.0.0.1 - - [06/Jul/2025 10:23:07] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:23:23,441 - INFO - New session created: 451d024d-aad9-4691-935b-e32776fcb782
+2025-07-06 10:23:23,442 - INFO - Message received from 451d024d-aad9-4691-935b-e32776fcb782: I need help
+2025-07-06 10:23:23,443 - INFO - Bot response sent to 451d024d-aad9-4691-935b-e32776fcb782: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:23:23,443 - INFO - 127.0.0.1 - - [06/Jul/2025 10:23:23] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:23:51,730 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/simple_test.py', reloading
+2025-07-06 10:23:51,749 - INFO -  * Restarting with stat
+2025-07-06 10:23:51,879 - INFO - Database initialized successfully
+2025-07-06 10:23:51,916 - WARNING -  * Debugger is active!
+2025-07-06 10:23:51,926 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:23:55,880 - INFO - Message received from 0472310e-8ec1-404b-a223-25ff7ab0ff43: Hello
+2025-07-06 10:23:55,881 - INFO - Bot response sent to 0472310e-8ec1-404b-a223-25ff7ab0ff43: Hello! How can I help you today? (Session: 0472310e...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:23:55,881 - INFO - 127.0.0.1 - - [06/Jul/2025 10:23:55] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:23:55,890 - INFO - 127.0.0.1 - - [06/Jul/2025 10:23:55] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:03,650 - INFO - Message received from 0472310e-8ec1-404b-a223-25ff7ab0ff43: Billing question
+2025-07-06 10:24:03,651 - INFO - Bot response sent to 0472310e-8ec1-404b-a223-25ff7ab0ff43: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:24:03,651 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:03] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:03,654 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:13,170 - INFO - Message received from 0472310e-8ec1-404b-a223-25ff7ab0ff43: I need the refund
+2025-07-06 10:24:13,173 - INFO - Bot response sent to 0472310e-8ec1-404b-a223-25ff7ab0ff43: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:24:13,173 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:13] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:13,182 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:13] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:31,317 - INFO - New session created: 81c33b4b-d44e-47a3-ab48-95df949bb18f
+2025-07-06 10:24:31,321 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:31,324 - INFO - New session created: 3bfae0a9-7e71-4eaa-85c1-f72e6847cdd7
+2025-07-06 10:24:31,326 - INFO - Message received from 3bfae0a9-7e71-4eaa-85c1-f72e6847cdd7: Hello
+2025-07-06 10:24:31,327 - INFO - Bot response sent to 3bfae0a9-7e71-4eaa-85c1-f72e6847cdd7: Hello! How can I help you today? (Session: 3bfae0a9...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:24:31,327 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:31,331 - INFO - New session created: 01bc7bce-366b-4ec5-a27b-e717cf2cb15f
+2025-07-06 10:24:31,334 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:31,338 - INFO - Message received from 01bc7bce-366b-4ec5-a27b-e717cf2cb15f: I need help
+2025-07-06 10:24:31,340 - INFO - Bot response sent to 01bc7bce-366b-4ec5-a27b-e717cf2cb15f: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:24:31,340 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:31,344 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:31,348 - INFO - Message received from 01bc7bce-366b-4ec5-a27b-e717cf2cb15f: I want a refund
+2025-07-06 10:24:31,349 - INFO - Bot response sent to 01bc7bce-366b-4ec5-a27b-e717cf2cb15f: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:24:31,349 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:31,352 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:31,356 - INFO - Message received from 01bc7bce-366b-4ec5-a27b-e717cf2cb15f: Goodbye
+2025-07-06 10:24:31,357 - INFO - Bot response sent to 01bc7bce-366b-4ec5-a27b-e717cf2cb15f: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:24:31,357 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:31,361 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:44,892 - INFO - Cleared session: 0472310e-8ec1-404b-a223-25ff7ab0ff43
+2025-07-06 10:24:44,892 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:44] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:24:44,897 - INFO - New session created: 4acf43c6-996f-4bbc-a6c7-479518cf335b
+2025-07-06 10:24:44,899 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:47,409 - INFO - Message received from 4acf43c6-996f-4bbc-a6c7-479518cf335b: I need help
+2025-07-06 10:24:47,412 - INFO - Bot response sent to 4acf43c6-996f-4bbc-a6c7-479518cf335b: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:24:47,412 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:47] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:47,414 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:47] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:48,293 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/simple_test.py', reloading
+2025-07-06 10:24:48,321 - INFO -  * Restarting with stat
+2025-07-06 10:24:48,475 - INFO - Database initialized successfully
+2025-07-06 10:24:48,498 - WARNING -  * Debugger is active!
+2025-07-06 10:24:48,512 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:24:59,220 - INFO - New session created: 1eaa7820-4502-45c3-9006-ec36ee26957a
+2025-07-06 10:24:59,228 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:59,230 - INFO - New session created: dff66dcb-3a67-42ba-9f45-1f356c2f8668
+2025-07-06 10:24:59,231 - INFO - Message received from dff66dcb-3a67-42ba-9f45-1f356c2f8668: Hello
+2025-07-06 10:24:59,232 - INFO - Bot response sent to dff66dcb-3a67-42ba-9f45-1f356c2f8668: Hello! How can I help you today? (Session: dff66dcb...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:24:59,232 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:59,235 - INFO - New session created: 0c9534e8-fc09-4fcc-a73b-84ec91239958
+2025-07-06 10:24:59,236 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:59,238 - INFO - New session created: 594e2669-1c45-46b8-8dd9-ae9a65c549c4
+2025-07-06 10:24:59,239 - INFO - Message received from 594e2669-1c45-46b8-8dd9-ae9a65c549c4: I need help
+2025-07-06 10:24:59,240 - INFO - Bot response sent to 594e2669-1c45-46b8-8dd9-ae9a65c549c4: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:24:59,240 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:59,242 - INFO - New session created: 91910a8c-08eb-4983-be4c-07f704afe2f2
+2025-07-06 10:24:59,243 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:59,245 - INFO - New session created: 9bc70413-532d-4403-bed7-0ad8aca3d096
+2025-07-06 10:24:59,247 - INFO - Message received from 9bc70413-532d-4403-bed7-0ad8aca3d096: I want a refund
+2025-07-06 10:24:59,248 - INFO - Bot response sent to 9bc70413-532d-4403-bed7-0ad8aca3d096: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:24:59,248 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:59,249 - INFO - New session created: ccea1da4-07b6-49b3-85a1-7abb366303dd
+2025-07-06 10:24:59,251 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:24:59,253 - INFO - New session created: bbe9eb44-3c17-45da-b544-2742e8f294d3
+2025-07-06 10:24:59,254 - INFO - Message received from bbe9eb44-3c17-45da-b544-2742e8f294d3: Goodbye
+2025-07-06 10:24:59,255 - INFO - Bot response sent to bbe9eb44-3c17-45da-b544-2742e8f294d3: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:24:59,255 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:24:59,257 - INFO - New session created: b33e7ba3-01ed-436f-8e77-cdcf848e591a
+2025-07-06 10:24:59,258 - INFO - 127.0.0.1 - - [06/Jul/2025 10:24:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:25:17,184 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/simple_test.py', reloading
+2025-07-06 10:25:17,202 - INFO -  * Restarting with stat
+2025-07-06 10:25:17,325 - INFO - Database initialized successfully
+2025-07-06 10:25:17,345 - WARNING -  * Debugger is active!
+2025-07-06 10:25:17,351 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:25:18,425 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/simple_test.py', reloading
+2025-07-06 10:25:18,443 - INFO -  * Restarting with stat
+2025-07-06 10:25:18,576 - INFO - Database initialized successfully
+2025-07-06 10:25:18,596 - WARNING -  * Debugger is active!
+2025-07-06 10:25:18,603 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:25:25,317 - INFO - New session created: e9015c72-de34-4589-9ece-b6c6cea78921
+2025-07-06 10:25:25,325 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "GET / HTTP/1.1" 200 -
+2025-07-06 10:25:25,327 - INFO - New session created: c25e408a-4011-48df-a3ad-312521c95d9d
+2025-07-06 10:25:25,328 - INFO - Message received from c25e408a-4011-48df-a3ad-312521c95d9d: Hello
+2025-07-06 10:25:25,329 - INFO - Bot response sent to c25e408a-4011-48df-a3ad-312521c95d9d: Hello! How can I help you today? (Session: c25e408a...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:25:25,329 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:25:25,331 - INFO - New session created: d85309a7-f3d2-49bf-b017-b32d01f2c0a1
+2025-07-06 10:25:25,333 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "GET / HTTP/1.1" 200 -
+2025-07-06 10:25:25,335 - INFO - New session created: 093d015e-2ef7-4f3a-b8ee-f735efd2e87a
+2025-07-06 10:25:25,335 - INFO - Message received from 093d015e-2ef7-4f3a-b8ee-f735efd2e87a: I need help
+2025-07-06 10:25:25,336 - INFO - Bot response sent to 093d015e-2ef7-4f3a-b8ee-f735efd2e87a: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:25:25,336 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:25:25,338 - INFO - New session created: 15599884-212b-4fa9-82d7-4d3c61ec7d22
+2025-07-06 10:25:25,341 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "GET / HTTP/1.1" 200 -
+2025-07-06 10:25:25,343 - INFO - New session created: 55f78dc8-a834-4765-b2c4-f54809d1ddb4
+2025-07-06 10:25:25,344 - INFO - Message received from 55f78dc8-a834-4765-b2c4-f54809d1ddb4: I want a refund
+2025-07-06 10:25:25,345 - INFO - Bot response sent to 55f78dc8-a834-4765-b2c4-f54809d1ddb4: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:25:25,345 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:25:25,346 - INFO - New session created: c812d7b1-f01a-4f1b-bfc3-a12639f9351e
+2025-07-06 10:25:25,348 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "GET / HTTP/1.1" 200 -
+2025-07-06 10:25:25,350 - INFO - New session created: 5d3401a2-c919-46c1-af47-c7e5dc142be1
+2025-07-06 10:25:25,351 - INFO - Message received from 5d3401a2-c919-46c1-af47-c7e5dc142be1: Goodbye
+2025-07-06 10:25:25,351 - INFO - Bot response sent to 5d3401a2-c919-46c1-af47-c7e5dc142be1: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:25:25,352 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:25:25,353 - INFO - New session created: ede9b29e-159b-4dff-8f2e-8a3567c3ee27
+2025-07-06 10:25:25,355 - INFO - 127.0.0.1 - - [06/Jul/2025 10:25:25] "GET / HTTP/1.1" 200 -
+2025-07-06 10:25:55,417 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/simple_test.py', reloading
+2025-07-06 10:25:55,435 - INFO -  * Restarting with stat
+2025-07-06 10:25:55,566 - INFO - Database initialized successfully
+2025-07-06 10:25:55,595 - WARNING -  * Debugger is active!
+2025-07-06 10:25:55,610 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:26:03,403 - INFO - New session created: 43417203-cb1f-44b4-a7b8-b265ae7c7dd9
+2025-07-06 10:26:03,410 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,413 - INFO - New session created: 2ae1f723-9fd1-449c-b5e2-3f1b412148cd
+2025-07-06 10:26:03,414 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,417 - INFO - Message received from 2ae1f723-9fd1-449c-b5e2-3f1b412148cd: Hello
+2025-07-06 10:26:03,418 - INFO - Bot response sent to 2ae1f723-9fd1-449c-b5e2-3f1b412148cd: Hello! How can I help you today? (Session: 2ae1f723...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:26:03,418 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:03,421 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,528 - INFO - New session created: 481bd007-1ef8-49ba-978b-873bac67d831
+2025-07-06 10:26:03,530 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,532 - INFO - Message received from 481bd007-1ef8-49ba-978b-873bac67d831: I need help
+2025-07-06 10:26:03,533 - INFO - Bot response sent to 481bd007-1ef8-49ba-978b-873bac67d831: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:26:03,533 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:03,535 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,638 - INFO - New session created: 32fd16ff-8cea-4a84-a9cc-b0fdb12a51e1
+2025-07-06 10:26:03,649 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,652 - INFO - Message received from 32fd16ff-8cea-4a84-a9cc-b0fdb12a51e1: I want a refund
+2025-07-06 10:26:03,652 - INFO - Bot response sent to 32fd16ff-8cea-4a84-a9cc-b0fdb12a51e1: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:26:03,653 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:03,655 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,763 - INFO - New session created: 573b36ef-8ffb-473e-938b-e90dbec95e81
+2025-07-06 10:26:03,765 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:03,767 - INFO - Message received from 573b36ef-8ffb-473e-938b-e90dbec95e81: Goodbye
+2025-07-06 10:26:03,767 - INFO - Bot response sent to 573b36ef-8ffb-473e-938b-e90dbec95e81: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:26:03,768 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:03,770 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:03] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:12,511 - INFO - New session created: 0481ff73-a3be-4baf-a50e-a0f860c20c46
+2025-07-06 10:26:12,517 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:12] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:12,713 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 10:26:15,061 - INFO - Message received from 0481ff73-a3be-4baf-a50e-a0f860c20c46: Hello
+2025-07-06 10:26:15,063 - INFO - Bot response sent to 0481ff73-a3be-4baf-a50e-a0f860c20c46: Hello! How can I help you today? (Session: 0481ff73...) (Intent: greeting, Confidence: 0.9)
+2025-07-06 10:26:15,063 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:15] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:15,067 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:15] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:16,853 - INFO - Message received from 0481ff73-a3be-4baf-a50e-a0f860c20c46: I need help
+2025-07-06 10:26:16,854 - INFO - Bot response sent to 0481ff73-a3be-4baf-a50e-a0f860c20c46: I'm here to help! What specific issue are you facing? (Intent: support, Confidence: 0.8)
+2025-07-06 10:26:16,855 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:16] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:16,857 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:16] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:17,460 - INFO - Message received from 0481ff73-a3be-4baf-a50e-a0f860c20c46: Billing question
+2025-07-06 10:26:17,461 - INFO - Bot response sent to 0481ff73-a3be-4baf-a50e-a0f860c20c46: I can help with billing inquiries. Please provide more details about your concern. (Intent: billing, Confidence: 0.75)
+2025-07-06 10:26:17,462 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:17] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:17,464 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:17] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:17,909 - INFO - Message received from 0481ff73-a3be-4baf-a50e-a0f860c20c46: Goodbye
+2025-07-06 10:26:17,909 - INFO - Bot response sent to 0481ff73-a3be-4baf-a50e-a0f860c20c46: Goodbye! Have a great day! (Intent: farewell, Confidence: 0.85)
+2025-07-06 10:26:17,910 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:17] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:26:17,913 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:17] "GET / HTTP/1.1" 200 -
+2025-07-06 10:26:24,234 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:24] "GET /api/stats HTTP/1.1" 200 -
+2025-07-06 10:26:28,652 - INFO - 127.0.0.1 - - [06/Jul/2025 10:26:28] "GET /api/stats HTTP/1.1" 200 -
+2025-07-06 10:28:01,728 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/enhanced_ui.py', reloading
+2025-07-06 10:28:01,747 - INFO -  * Restarting with stat
+2025-07-06 10:28:01,880 - INFO - Database initialized successfully
+2025-07-06 10:28:01,900 - WARNING -  * Debugger is active!
+2025-07-06 10:28:01,914 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:28:31,565 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/enhanced_ui.py', reloading
+2025-07-06 10:28:31,585 - INFO -  * Restarting with stat
+2025-07-06 10:28:31,728 - INFO - Database initialized successfully
+2025-07-06 10:28:31,749 - WARNING -  * Debugger is active!
+2025-07-06 10:28:31,763 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:30:15,043 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/airline_test.py', reloading
+2025-07-06 10:30:15,062 - INFO -  * Restarting with stat
+2025-07-06 10:30:15,202 - INFO - Database initialized successfully
+2025-07-06 10:30:15,224 - WARNING -  * Debugger is active!
+2025-07-06 10:30:15,239 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:30:27,353 - INFO - New session created: 35e7220d-c5de-4bb9-ae46-aa2fa719dbd5
+2025-07-06 10:30:27,361 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,363 - INFO - New session created: d5732e13-9515-4823-be28-9646277735e9
+2025-07-06 10:30:27,365 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,368 - INFO - Message received from d5732e13-9515-4823-be28-9646277735e9: I want to book a flight to New York
+2025-07-06 10:30:27,370 - INFO - Bot response sent to d5732e13-9515-4823-be28-9646277735e9: I can help you with booking flights. What destination are you looking for? (Session: d5732e13...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:27,370 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:27,372 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,479 - INFO - New session created: c5b2d1d4-f853-4f5b-888f-cbf4cb56a6f4
+2025-07-06 10:30:27,481 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,483 - INFO - Message received from c5b2d1d4-f853-4f5b-888f-cbf4cb56a6f4: Please help me reserve a seat
+2025-07-06 10:30:27,484 - INFO - Bot response sent to c5b2d1d4-f853-4f5b-888f-cbf4cb56a6f4: I can help you with booking flights. What destination are you looking for? (Session: c5b2d1d4...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:27,484 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:27,487 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,595 - INFO - New session created: c2dd1665-5bf4-4091-b7c3-63a1c6bda2fe
+2025-07-06 10:30:27,596 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,598 - INFO - Message received from c2dd1665-5bf4-4091-b7c3-63a1c6bda2fe: Cancel my flight booking
+2025-07-06 10:30:27,599 - INFO - Bot response sent to c2dd1665-5bf4-4091-b7c3-63a1c6bda2fe: I can help you with booking flights. What destination are you looking for? (Session: c2dd1665...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:27,599 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:27,601 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,704 - INFO - New session created: a3a61137-9855-4848-b168-d5a7154e4855
+2025-07-06 10:30:27,706 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,708 - INFO - Message received from a3a61137-9855-4848-b168-d5a7154e4855: I need to cancel my reservation
+2025-07-06 10:30:27,708 - INFO - Bot response sent to a3a61137-9855-4848-b168-d5a7154e4855: I can help you with booking flights. What destination are you looking for? (Session: a3a61137...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:27,708 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:27,711 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,819 - INFO - New session created: 036edabb-79ca-4311-b484-452b255c7adc
+2025-07-06 10:30:27,820 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,822 - INFO - Message received from 036edabb-79ca-4311-b484-452b255c7adc: What time does my flight depart?
+2025-07-06 10:30:27,824 - INFO - Bot response sent to 036edabb-79ca-4311-b484-452b255c7adc: I can help you with booking flights. What destination are you looking for? (Session: 036edabb...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:27,824 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:27,826 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,929 - INFO - New session created: 9313e9da-5835-44d5-bff0-fc0a8488ebce
+2025-07-06 10:30:27,931 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:27,933 - INFO - Message received from 9313e9da-5835-44d5-bff0-fc0a8488ebce: I have a question about baggage
+2025-07-06 10:30:27,934 - INFO - Bot response sent to 9313e9da-5835-44d5-bff0-fc0a8488ebce: I'm here to answer your questions. What would you like to know? (Intent: Inquiry, Confidence: 0.8)
+2025-07-06 10:30:27,934 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:27,936 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,043 - INFO - New session created: 8449520d-85f0-48de-8974-e5f059943b86
+2025-07-06 10:30:28,045 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,047 - INFO - Message received from 8449520d-85f0-48de-8974-e5f059943b86: I'm very unhappy with the service
+2025-07-06 10:30:28,048 - INFO - Bot response sent to 8449520d-85f0-48de-8974-e5f059943b86: I apologize for any inconvenience. Please describe the issue you're experiencing so I can help resolve it. (Intent: Complaint, Confidence: 0.85)
+2025-07-06 10:30:28,048 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,050 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,156 - INFO - New session created: f198c713-42f3-4f77-aa1a-14e015cfbedc
+2025-07-06 10:30:28,158 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,160 - INFO - Message received from f198c713-42f3-4f77-aa1a-14e015cfbedc: There's a problem with my booking
+2025-07-06 10:30:28,161 - INFO - Bot response sent to f198c713-42f3-4f77-aa1a-14e015cfbedc: I can help you with booking flights. What destination are you looking for? (Session: f198c713...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:28,161 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,164 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,271 - INFO - New session created: 54d613f5-b3d3-4834-a573-84a3d4567cd2
+2025-07-06 10:30:28,272 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,275 - INFO - Message received from 54d613f5-b3d3-4834-a573-84a3d4567cd2: I want to leave feedback about my experience
+2025-07-06 10:30:28,275 - INFO - Bot response sent to 54d613f5-b3d3-4834-a573-84a3d4567cd2: Thank you for wanting to share your feedback. Your input helps us improve our services. (Intent: Feedback, Confidence: 0.8)
+2025-07-06 10:30:28,276 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,278 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,385 - INFO - New session created: dfa2abc1-563f-43a4-a478-325b14fdcf64
+2025-07-06 10:30:28,388 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,390 - INFO - Message received from dfa2abc1-563f-43a4-a478-325b14fdcf64: Here's my review of the flight
+2025-07-06 10:30:28,391 - INFO - Bot response sent to dfa2abc1-563f-43a4-a478-325b14fdcf64: I can help you with booking flights. What destination are you looking for? (Session: dfa2abc1...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:28,391 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,393 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,500 - INFO - New session created: 21683a1b-7fc8-4787-a50f-b3390c7d84a4
+2025-07-06 10:30:28,501 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,504 - INFO - Message received from 21683a1b-7fc8-4787-a50f-b3390c7d84a4: I need help with my booking
+2025-07-06 10:30:28,504 - INFO - Bot response sent to 21683a1b-7fc8-4787-a50f-b3390c7d84a4: I can help you with booking flights. What destination are you looking for? (Session: 21683a1b...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:28,504 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,507 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,615 - INFO - New session created: 5e114850-dec6-4999-b4cb-b01ab990ce2d
+2025-07-06 10:30:28,617 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,619 - INFO - Message received from 5e114850-dec6-4999-b4cb-b01ab990ce2d: Can you assist me please?
+2025-07-06 10:30:28,620 - INFO - Bot response sent to 5e114850-dec6-4999-b4cb-b01ab990ce2d: I'm here to provide support. How can I assist you today? (Intent: Support, Confidence: 0.85)
+2025-07-06 10:30:28,620 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,622 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,729 - INFO - New session created: 9b5b9ff1-fc6e-41f7-a69b-862c4e2a1f9c
+2025-07-06 10:30:28,732 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,734 - INFO - Message received from 9b5b9ff1-fc6e-41f7-a69b-862c4e2a1f9c: I want my money back
+2025-07-06 10:30:28,735 - INFO - Bot response sent to 9b5b9ff1-fc6e-41f7-a69b-862c4e2a1f9c: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:30:28,735 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,738 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,843 - INFO - New session created: 85ac7dab-7dcb-4346-85a2-1cb99b45b482
+2025-07-06 10:30:28,845 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,847 - INFO - Message received from 85ac7dab-7dcb-4346-85a2-1cb99b45b482: Request a refund for my ticket
+2025-07-06 10:30:28,847 - INFO - Bot response sent to 85ac7dab-7dcb-4346-85a2-1cb99b45b482: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:30:28,848 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,853 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,961 - INFO - New session created: b58df359-4241-47ac-b8fe-5ef594331cc4
+2025-07-06 10:30:28,963 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:28,965 - INFO - Message received from b58df359-4241-47ac-b8fe-5ef594331cc4: I need to change my flight date
+2025-07-06 10:30:28,966 - INFO - Bot response sent to b58df359-4241-47ac-b8fe-5ef594331cc4: I can help you with booking flights. What destination are you looking for? (Session: b58df359...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:28,966 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:28,968 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:28] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,073 - INFO - New session created: 7511706d-355a-40d2-bae7-b22dccd112ac
+2025-07-06 10:30:29,075 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,076 - INFO - Message received from 7511706d-355a-40d2-bae7-b22dccd112ac: Can I modify my booking?
+2025-07-06 10:30:29,077 - INFO - Bot response sent to 7511706d-355a-40d2-bae7-b22dccd112ac: I can help you with booking flights. What destination are you looking for? (Session: 7511706d...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:29,077 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,080 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,187 - INFO - New session created: bbd9580a-18fe-40e1-a378-8c3bc211aa65
+2025-07-06 10:30:29,189 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,191 - INFO - Message received from bbd9580a-18fe-40e1-a378-8c3bc211aa65: I want to upgrade to business class
+2025-07-06 10:30:29,191 - INFO - Bot response sent to bbd9580a-18fe-40e1-a378-8c3bc211aa65: I can assist with seat upgrades. Let me check available options for your flight. (Intent: Upgrade, Confidence: 0.9)
+2025-07-06 10:30:29,192 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,194 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,302 - INFO - New session created: 68afa443-ba6e-454e-99af-aa71054869cf
+2025-07-06 10:30:29,304 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,306 - INFO - Message received from 68afa443-ba6e-454e-99af-aa71054869cf: Can I get a premium seat?
+2025-07-06 10:30:29,307 - INFO - Bot response sent to 68afa443-ba6e-454e-99af-aa71054869cf: I can assist with seat upgrades. Let me check available options for your flight. (Intent: Upgrade, Confidence: 0.9)
+2025-07-06 10:30:29,307 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,309 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,416 - INFO - New session created: 0bb31c27-a4b3-4b96-a087-f35fd0e67d24
+2025-07-06 10:30:29,418 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,420 - INFO - Message received from 0bb31c27-a4b3-4b96-a087-f35fd0e67d24: I need to reschedule my flight
+2025-07-06 10:30:29,421 - INFO - Bot response sent to 0bb31c27-a4b3-4b96-a087-f35fd0e67d24: I can help you with booking flights. What destination are you looking for? (Session: 0bb31c27...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:29,421 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,423 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,528 - INFO - New session created: ed150bf4-8e5f-4cb1-934d-e73b98a1e8e6
+2025-07-06 10:30:29,529 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,531 - INFO - Message received from ed150bf4-8e5f-4cb1-934d-e73b98a1e8e6: Change my flight to a different time
+2025-07-06 10:30:29,532 - INFO - Bot response sent to ed150bf4-8e5f-4cb1-934d-e73b98a1e8e6: I can help you with booking flights. What destination are you looking for? (Session: ed150bf4...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:29,532 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,534 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,641 - INFO - New session created: 829741df-6f5b-4cb0-9414-4514ef87b57a
+2025-07-06 10:30:29,643 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,645 - INFO - Message received from 829741df-6f5b-4cb0-9414-4514ef87b57a: How do I check in online?
+2025-07-06 10:30:29,646 - INFO - Bot response sent to 829741df-6f5b-4cb0-9414-4514ef87b57a: I can help with check-in procedures. You can check in online up to 24 hours before your flight. (Intent: Check-in, Confidence: 0.9)
+2025-07-06 10:30:29,646 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,648 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,755 - INFO - New session created: 9d17e099-cc15-4e6e-954f-e50fd233c2d3
+2025-07-06 10:30:29,757 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,759 - INFO - Message received from 9d17e099-cc15-4e6e-954f-e50fd233c2d3: I need help with check-in
+2025-07-06 10:30:29,760 - INFO - Bot response sent to 9d17e099-cc15-4e6e-954f-e50fd233c2d3: I'm here to provide support. How can I assist you today? (Intent: Support, Confidence: 0.85)
+2025-07-06 10:30:29,760 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,762 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,870 - INFO - New session created: 63e2ff73-34bb-4ba5-8fc5-e721ae28600c
+2025-07-06 10:30:29,871 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,873 - INFO - Message received from 63e2ff73-34bb-4ba5-8fc5-e721ae28600c: What gate is my flight boarding from?
+2025-07-06 10:30:29,874 - INFO - Bot response sent to 63e2ff73-34bb-4ba5-8fc5-e721ae28600c: I can help you with booking flights. What destination are you looking for? (Session: 63e2ff73...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:29,874 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,876 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,984 - INFO - New session created: 8457a493-394c-4a75-b262-188761233f71
+2025-07-06 10:30:29,985 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:29,987 - INFO - Message received from 8457a493-394c-4a75-b262-188761233f71: When does boarding start?
+2025-07-06 10:30:29,988 - INFO - Bot response sent to 8457a493-394c-4a75-b262-188761233f71: Boarding information will be displayed on airport screens and announced at the gate. (Intent: Boarding, Confidence: 0.85)
+2025-07-06 10:30:29,988 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:29,991 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:29] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,099 - INFO - New session created: ec807405-66ec-47ee-805a-5d81ebde7081
+2025-07-06 10:30:30,101 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,103 - INFO - Message received from ec807405-66ec-47ee-805a-5d81ebde7081: I want a window seat
+2025-07-06 10:30:30,104 - INFO - Bot response sent to ec807405-66ec-47ee-805a-5d81ebde7081: I can help you with seat selection. Would you like to choose your seats now? (Intent: Seating, Confidence: 0.9)
+2025-07-06 10:30:30,104 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,106 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,211 - INFO - New session created: 501664b8-d609-4976-aa90-ac91120ced9c
+2025-07-06 10:30:30,212 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,214 - INFO - Message received from 501664b8-d609-4976-aa90-ac91120ced9c: Can I select my seat?
+2025-07-06 10:30:30,215 - INFO - Bot response sent to 501664b8-d609-4976-aa90-ac91120ced9c: I can help you with seat selection. Would you like to choose your seats now? (Intent: Seating, Confidence: 0.9)
+2025-07-06 10:30:30,215 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,217 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,325 - INFO - New session created: c0e7bd15-1eeb-4858-b274-c4811135b92c
+2025-07-06 10:30:30,326 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,328 - INFO - Message received from c0e7bd15-1eeb-4858-b274-c4811135b92c: What amenities are available on the flight?
+2025-07-06 10:30:30,329 - INFO - Bot response sent to c0e7bd15-1eeb-4858-b274-c4811135b92c: I can help you with booking flights. What destination are you looking for? (Session: c0e7bd15...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:30,329 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,331 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,438 - INFO - New session created: 9483c5e9-2dac-48ef-9a9c-0e37b56dfc6d
+2025-07-06 10:30:30,439 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,441 - INFO - Message received from 9483c5e9-2dac-48ef-9a9c-0e37b56dfc6d: Do you have Wi-Fi on board?
+2025-07-06 10:30:30,442 - INFO - Bot response sent to 9483c5e9-2dac-48ef-9a9c-0e37b56dfc6d: Boarding information will be displayed on airport screens and announced at the gate. (Intent: Boarding, Confidence: 0.85)
+2025-07-06 10:30:30,442 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,444 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,552 - INFO - New session created: 19650cf3-bf49-48a4-b979-32b0608f29fd
+2025-07-06 10:30:30,554 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,556 - INFO - Message received from 19650cf3-bf49-48a4-b979-32b0608f29fd: What meal options do you have?
+2025-07-06 10:30:30,557 - INFO - Bot response sent to 19650cf3-bf49-48a4-b979-32b0608f29fd: I understand you said: 'What meal options do you have?'. Could you please provide more details so I can assist you better? (Intent: Inquiry, Confidence: 0.6)
+2025-07-06 10:30:30,557 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,559 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,663 - INFO - New session created: 9ad791a7-27d4-4401-863d-eac2c00222c4
+2025-07-06 10:30:30,664 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,666 - INFO - Message received from 9ad791a7-27d4-4401-863d-eac2c00222c4: I have dietary restrictions
+2025-07-06 10:30:30,668 - INFO - Bot response sent to 9ad791a7-27d4-4401-863d-eac2c00222c4: I can help you with meal options and special dietary requirements for your flight. (Intent: Meals, Confidence: 0.85)
+2025-07-06 10:30:30,668 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,670 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,778 - INFO - New session created: 9cdcbdc8-890b-4d60-9330-ce4039239038
+2025-07-06 10:30:30,779 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,781 - INFO - Message received from 9cdcbdc8-890b-4d60-9330-ce4039239038: Tell me about your flight schedules
+2025-07-06 10:30:30,782 - INFO - Bot response sent to 9cdcbdc8-890b-4d60-9330-ce4039239038: I can help you with booking flights. What destination are you looking for? (Session: 9cdcbdc8...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:30,782 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,784 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,891 - INFO - New session created: f6023628-e93b-4022-8fd4-e0008ec530d2
+2025-07-06 10:30:30,893 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:30,895 - INFO - Message received from f6023628-e93b-4022-8fd4-e0008ec530d2: I need information about baggage allowance
+2025-07-06 10:30:30,896 - INFO - Bot response sent to f6023628-e93b-4022-8fd4-e0008ec530d2: I'm here to answer your questions. What would you like to know? (Intent: Inquiry, Confidence: 0.8)
+2025-07-06 10:30:30,896 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:30,898 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:30] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,005 - INFO - New session created: ca25b29f-f263-452b-93a3-35c174a2f140
+2025-07-06 10:30:31,007 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,009 - INFO - Message received from ca25b29f-f263-452b-93a3-35c174a2f140: How do I join your frequent flyer program?
+2025-07-06 10:30:31,010 - INFO - Bot response sent to ca25b29f-f263-452b-93a3-35c174a2f140: I can help you with our loyalty program. Are you interested in joining or have questions about your membership? (Intent: Loyalty Programs, Confidence: 0.85)
+2025-07-06 10:30:31,010 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,012 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,121 - INFO - New session created: 96b1357a-7a25-4715-b01d-0da38cbbda06
+2025-07-06 10:30:31,123 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,125 - INFO - Message received from 96b1357a-7a25-4715-b01d-0da38cbbda06: What are the benefits of membership?
+2025-07-06 10:30:31,126 - INFO - Bot response sent to 96b1357a-7a25-4715-b01d-0da38cbbda06: I can help you with our loyalty program. Are you interested in joining or have questions about your membership? (Intent: Loyalty Programs, Confidence: 0.85)
+2025-07-06 10:30:31,126 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,129 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,236 - INFO - New session created: 28c63c74-a42a-4294-97a6-38fb54f6cfaa
+2025-07-06 10:30:31,237 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,241 - INFO - Message received from 28c63c74-a42a-4294-97a6-38fb54f6cfaa: How can I redeem my miles?
+2025-07-06 10:30:31,242 - INFO - Bot response sent to 28c63c74-a42a-4294-97a6-38fb54f6cfaa: I can help you with our loyalty program. Are you interested in joining or have questions about your membership? (Intent: Loyalty Programs, Confidence: 0.85)
+2025-07-06 10:30:31,242 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,244 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,352 - INFO - New session created: 2fdafe67-0bdb-471e-863a-a523ef01d466
+2025-07-06 10:30:31,354 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,356 - INFO - Message received from 2fdafe67-0bdb-471e-863a-a523ef01d466: What rewards can I earn?
+2025-07-06 10:30:31,356 - INFO - Bot response sent to 2fdafe67-0bdb-471e-863a-a523ef01d466: Let me help you with reward redemption and earning opportunities. (Intent: Rewards, Confidence: 0.8)
+2025-07-06 10:30:31,356 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,358 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,464 - INFO - New session created: a1fd78ec-36f2-46fc-9057-24bb2542b656
+2025-07-06 10:30:31,465 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,467 - INFO - Message received from a1fd78ec-36f2-46fc-9057-24bb2542b656: Do you have any special deals?
+2025-07-06 10:30:31,468 - INFO - Bot response sent to a1fd78ec-36f2-46fc-9057-24bb2542b656: Check out our current promotions and special offers for great deals on flights. (Intent: Promotions, Confidence: 0.85)
+2025-07-06 10:30:31,468 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,470 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,578 - INFO - New session created: 8a79c6b6-6c7b-4a08-9d22-e2582cc1672a
+2025-07-06 10:30:31,579 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,581 - INFO - Message received from 8a79c6b6-6c7b-4a08-9d22-e2582cc1672a: Are there any current promotions?
+2025-07-06 10:30:31,582 - INFO - Bot response sent to 8a79c6b6-6c7b-4a08-9d22-e2582cc1672a: Check out our current promotions and special offers for great deals on flights. (Intent: Promotions, Confidence: 0.85)
+2025-07-06 10:30:31,582 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,584 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,692 - INFO - New session created: 8313248b-4d82-4adb-b7df-3b4409757446
+2025-07-06 10:30:31,693 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,695 - INFO - Message received from 8313248b-4d82-4adb-b7df-3b4409757446: What offers are available?
+2025-07-06 10:30:31,696 - INFO - Bot response sent to 8313248b-4d82-4adb-b7df-3b4409757446: I can show you our latest offers and deals. What type of travel are you planning? (Intent: Offers, Confidence: 0.8)
+2025-07-06 10:30:31,696 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,700 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,808 - INFO - New session created: 47d041ec-cd74-4881-84aa-63f210e788c1
+2025-07-06 10:30:31,810 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,812 - INFO - Message received from 47d041ec-cd74-4881-84aa-63f210e788c1: Show me your latest deals
+2025-07-06 10:30:31,812 - INFO - Bot response sent to 47d041ec-cd74-4881-84aa-63f210e788c1: Check out our current promotions and special offers for great deals on flights. (Intent: Promotions, Confidence: 0.85)
+2025-07-06 10:30:31,813 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,815 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,921 - INFO - New session created: 7d2fbf9c-3f2a-4782-b291-b265454b7eae
+2025-07-06 10:30:31,923 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:31,925 - INFO - Message received from 7d2fbf9c-3f2a-4782-b291-b265454b7eae: Can I get a discount on my ticket?
+2025-07-06 10:30:31,925 - INFO - Bot response sent to 7d2fbf9c-3f2a-4782-b291-b265454b7eae: I can help you find discounted fares and ways to save on your booking. (Intent: Discounts, Confidence: 0.85)
+2025-07-06 10:30:31,925 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:31,927 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:31] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,035 - INFO - New session created: c50975aa-f924-4fa6-9b7e-b7e743902f16
+2025-07-06 10:30:32,037 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,039 - INFO - Message received from c50975aa-f924-4fa6-9b7e-b7e743902f16: Do you offer student discounts?
+2025-07-06 10:30:32,039 - INFO - Bot response sent to c50975aa-f924-4fa6-9b7e-b7e743902f16: I can help you find discounted fares and ways to save on your booking. (Intent: Discounts, Confidence: 0.85)
+2025-07-06 10:30:32,040 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,042 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,150 - INFO - New session created: 5f2ac7d6-34c7-4577-8fa6-710174846602
+2025-07-06 10:30:32,151 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,153 - INFO - Message received from 5f2ac7d6-34c7-4577-8fa6-710174846602: What is your cancellation policy?
+2025-07-06 10:30:32,154 - INFO - Bot response sent to 5f2ac7d6-34c7-4577-8fa6-710174846602: I can assist you with canceling your booking. Please provide your booking reference number. (Intent: Cancellation, Confidence: 0.9)
+2025-07-06 10:30:32,154 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,157 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,264 - INFO - New session created: ae3dfb3d-26b0-4ae5-bda1-0f6d0dea3462
+2025-07-06 10:30:32,266 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,268 - INFO - Message received from ae3dfb3d-26b0-4ae5-bda1-0f6d0dea3462: Tell me about your refund policy
+2025-07-06 10:30:32,269 - INFO - Bot response sent to ae3dfb3d-26b0-4ae5-bda1-0f6d0dea3462: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:30:32,269 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,271 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,379 - INFO - New session created: 353b5e1d-3929-42e7-9584-f910a8ab7746
+2025-07-06 10:30:32,380 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,382 - INFO - Message received from 353b5e1d-3929-42e7-9584-f910a8ab7746: How do I change my booking?
+2025-07-06 10:30:32,383 - INFO - Bot response sent to 353b5e1d-3929-42e7-9584-f910a8ab7746: I can help you with booking flights. What destination are you looking for? (Session: 353b5e1d...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:30:32,383 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,387 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,494 - INFO - New session created: 6a4813cb-8ff6-41d0-8f55-6d0b4765350b
+2025-07-06 10:30:32,496 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,498 - INFO - Message received from 6a4813cb-8ff6-41d0-8f55-6d0b4765350b: What's the process for upgrades?
+2025-07-06 10:30:32,499 - INFO - Bot response sent to 6a4813cb-8ff6-41d0-8f55-6d0b4765350b: I can assist with seat upgrades. Let me check available options for your flight. (Intent: Upgrade, Confidence: 0.9)
+2025-07-06 10:30:32,499 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,501 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,605 - INFO - New session created: d5f4c593-c1f3-4d04-a6b7-3b731a97ac2f
+2025-07-06 10:30:32,607 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,609 - INFO - Message received from d5f4c593-c1f3-4d04-a6b7-3b731a97ac2f: What are the travel requirements?
+2025-07-06 10:30:32,609 - INFO - Bot response sent to d5f4c593-c1f3-4d04-a6b7-3b731a97ac2f: I can provide information about travel regulations and requirements for your destination. (Intent: Regulations, Confidence: 0.8)
+2025-07-06 10:30:32,610 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,612 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,720 - INFO - New session created: 702e6616-b641-4120-aba6-407ed27af3a2
+2025-07-06 10:30:32,722 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,723 - INFO - Message received from 702e6616-b641-4120-aba6-407ed27af3a2: Do I need a visa for this destination?
+2025-07-06 10:30:32,724 - INFO - Bot response sent to 702e6616-b641-4120-aba6-407ed27af3a2: Hello! Welcome to our airline customer service. How can I help you today? (Session: 702e6616...) (Intent: Support, Confidence: 0.9)
+2025-07-06 10:30:32,724 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,726 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,834 - INFO - New session created: 359c6b00-6e40-45c7-872a-44e9020c1b9e
+2025-07-06 10:30:32,835 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,838 - INFO - Message received from 359c6b00-6e40-45c7-872a-44e9020c1b9e: What items are prohibited in carry-on?
+2025-07-06 10:30:32,840 - INFO - Bot response sent to 359c6b00-6e40-45c7-872a-44e9020c1b9e: Hello! Welcome to our airline customer service. How can I help you today? (Session: 359c6b00...) (Intent: Support, Confidence: 0.9)
+2025-07-06 10:30:32,840 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,842 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,946 - INFO - New session created: 190c2ee8-1ac6-4503-ad75-bfe105304451
+2025-07-06 10:30:32,947 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:32,949 - INFO - Message received from 190c2ee8-1ac6-4503-ad75-bfe105304451: Tell me about security procedures
+2025-07-06 10:30:32,950 - INFO - Bot response sent to 190c2ee8-1ac6-4503-ad75-bfe105304451: I'm happy to provide information. What specific details would you like to know? (Intent: Information, Confidence: 0.75)
+2025-07-06 10:30:32,950 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:32,952 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:32] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:33,060 - INFO - New session created: d6124f1d-8fbc-44be-ad04-5c3f1562bd91
+2025-07-06 10:30:33,061 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:33] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:33,063 - INFO - Message received from d6124f1d-8fbc-44be-ad04-5c3f1562bd91: Is it safe to fly during the pandemic?
+2025-07-06 10:30:33,064 - INFO - Bot response sent to d6124f1d-8fbc-44be-ad04-5c3f1562bd91: Safety is our top priority. I can provide information about our safety measures and procedures. (Intent: Safety, Confidence: 0.85)
+2025-07-06 10:30:33,064 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:33,066 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:33] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:33,174 - INFO - New session created: d6de8d4a-b530-44d1-b29b-e0d997fbcef3
+2025-07-06 10:30:33,176 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:33] "GET / HTTP/1.1" 200 -
+2025-07-06 10:30:33,178 - INFO - Message received from d6de8d4a-b530-44d1-b29b-e0d997fbcef3: What safety measures do you have?
+2025-07-06 10:30:33,179 - INFO - Bot response sent to d6de8d4a-b530-44d1-b29b-e0d997fbcef3: Safety is our top priority. I can provide information about our safety measures and procedures. (Intent: Safety, Confidence: 0.85)
+2025-07-06 10:30:33,179 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:30:33,181 - INFO - 127.0.0.1 - - [06/Jul/2025 10:30:33] "GET / HTTP/1.1" 200 -
+2025-07-06 10:31:38,289 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/enhanced_ui.py', reloading
+2025-07-06 10:31:38,307 - INFO -  * Restarting with stat
+2025-07-06 10:31:38,445 - INFO - Database initialized successfully
+2025-07-06 10:31:38,466 - WARNING -  * Debugger is active!
+2025-07-06 10:31:38,476 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:31:45,664 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/enhanced_ui.py', reloading
+2025-07-06 10:31:45,683 - INFO -  * Restarting with stat
+2025-07-06 10:31:45,843 - INFO - Database initialized successfully
+2025-07-06 10:31:45,865 - WARNING -  * Debugger is active!
+2025-07-06 10:31:45,879 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:32:40,172 - INFO - New session created: b53d55f0-09a3-49aa-9535-77d053962955
+2025-07-06 10:32:40,183 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,186 - INFO - New session created: f31f9fcd-08cb-41c1-80dd-5dbce50448e3
+2025-07-06 10:32:40,188 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,192 - INFO - Message received from f31f9fcd-08cb-41c1-80dd-5dbce50448e3: I want to book a flight to New York
+2025-07-06 10:32:40,193 - INFO - Bot response sent to f31f9fcd-08cb-41c1-80dd-5dbce50448e3: I can help you with booking flights. What destination are you looking for? (Session: f31f9fcd...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:32:40,193 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:40,197 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,306 - INFO - New session created: bb073e6e-5da3-4426-b9bd-cbbb26a2f431
+2025-07-06 10:32:40,309 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,312 - INFO - Message received from bb073e6e-5da3-4426-b9bd-cbbb26a2f431: Please help me reserve a seat
+2025-07-06 10:32:40,314 - INFO - Bot response sent to bb073e6e-5da3-4426-b9bd-cbbb26a2f431: I can help you with seat selection. Would you like to choose your seats now? (Intent: Seating, Confidence: 0.9)
+2025-07-06 10:32:40,314 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:40,317 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,427 - INFO - New session created: 99cadb8f-8e1d-4fb0-ad74-1b3b4fa218eb
+2025-07-06 10:32:40,430 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,433 - INFO - Message received from 99cadb8f-8e1d-4fb0-ad74-1b3b4fa218eb: Cancel my flight booking
+2025-07-06 10:32:40,434 - INFO - Bot response sent to 99cadb8f-8e1d-4fb0-ad74-1b3b4fa218eb: I can assist you with canceling your booking. Please provide your booking reference number. (Intent: Cancellation, Confidence: 0.9)
+2025-07-06 10:32:40,434 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:40,437 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,545 - INFO - New session created: 1e371985-cd41-4b78-a0d6-badaf29a62e9
+2025-07-06 10:32:40,548 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,550 - INFO - Message received from 1e371985-cd41-4b78-a0d6-badaf29a62e9: I need to cancel my reservation
+2025-07-06 10:32:40,551 - INFO - Bot response sent to 1e371985-cd41-4b78-a0d6-badaf29a62e9: I can assist you with canceling your booking. Please provide your booking reference number. (Intent: Cancellation, Confidence: 0.9)
+2025-07-06 10:32:40,551 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:40,554 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,663 - INFO - New session created: 6a408790-be37-49cd-87cc-25057503a2b3
+2025-07-06 10:32:40,665 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,668 - INFO - Message received from 6a408790-be37-49cd-87cc-25057503a2b3: What time does my flight depart?
+2025-07-06 10:32:40,669 - INFO - Bot response sent to 6a408790-be37-49cd-87cc-25057503a2b3: I can help you with booking flights. What destination are you looking for? (Session: 6a408790...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:32:40,669 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:40,671 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,780 - INFO - New session created: 048cc321-6cf2-40d9-9251-7bbd4f7df376
+2025-07-06 10:32:40,782 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,784 - INFO - Message received from 048cc321-6cf2-40d9-9251-7bbd4f7df376: I have a question about baggage
+2025-07-06 10:32:40,785 - INFO - Bot response sent to 048cc321-6cf2-40d9-9251-7bbd4f7df376: I'm here to answer your questions. What would you like to know? (Intent: Inquiry, Confidence: 0.8)
+2025-07-06 10:32:40,786 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:40,789 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,897 - INFO - New session created: 6bfc9634-87f7-4476-92fa-6614b32d8709
+2025-07-06 10:32:40,902 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:40,905 - INFO - Message received from 6bfc9634-87f7-4476-92fa-6614b32d8709: I'm very unhappy with the service
+2025-07-06 10:32:40,907 - INFO - Bot response sent to 6bfc9634-87f7-4476-92fa-6614b32d8709: I apologize for any inconvenience. Please describe the issue you're experiencing so I can help resolve it. (Intent: Complaint, Confidence: 0.85)
+2025-07-06 10:32:40,907 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:40,910 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:40] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,019 - INFO - New session created: da521269-62e7-4b94-b13d-11c2e63e79c3
+2025-07-06 10:32:41,021 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,024 - INFO - Message received from da521269-62e7-4b94-b13d-11c2e63e79c3: There's a problem with my booking
+2025-07-06 10:32:41,025 - INFO - Bot response sent to da521269-62e7-4b94-b13d-11c2e63e79c3: I apologize for any inconvenience. Please describe the issue you're experiencing so I can help resolve it. (Intent: Complaint, Confidence: 0.85)
+2025-07-06 10:32:41,025 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,027 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,136 - INFO - New session created: 14ea8449-a473-4ae2-92b8-4438006f95f5
+2025-07-06 10:32:41,139 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,141 - INFO - Message received from 14ea8449-a473-4ae2-92b8-4438006f95f5: I want to leave feedback about my experience
+2025-07-06 10:32:41,142 - INFO - Bot response sent to 14ea8449-a473-4ae2-92b8-4438006f95f5: Thank you for wanting to share your feedback. Your input helps us improve our services. (Intent: Feedback, Confidence: 0.8)
+2025-07-06 10:32:41,142 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,145 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,254 - INFO - New session created: 4df7ba70-d949-4a05-b7f8-1ecbf4253a4b
+2025-07-06 10:32:41,256 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,259 - INFO - Message received from 4df7ba70-d949-4a05-b7f8-1ecbf4253a4b: Here's my review of the flight
+2025-07-06 10:32:41,260 - INFO - Bot response sent to 4df7ba70-d949-4a05-b7f8-1ecbf4253a4b: Thank you for wanting to share your feedback. Your input helps us improve our services. (Intent: Feedback, Confidence: 0.8)
+2025-07-06 10:32:41,260 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,263 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,371 - INFO - New session created: ec9cd5d7-a5d4-4b27-8575-a7ed9d531a8c
+2025-07-06 10:32:41,373 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,376 - INFO - Message received from ec9cd5d7-a5d4-4b27-8575-a7ed9d531a8c: I need help with my booking
+2025-07-06 10:32:41,377 - INFO - Bot response sent to ec9cd5d7-a5d4-4b27-8575-a7ed9d531a8c: I can help you with booking flights. What destination are you looking for? (Session: ec9cd5d7...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:32:41,377 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,380 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,488 - INFO - New session created: 4bcc76b9-dcf1-45b6-9167-e1fb49b44b90
+2025-07-06 10:32:41,491 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,493 - INFO - Message received from 4bcc76b9-dcf1-45b6-9167-e1fb49b44b90: Can you assist me please?
+2025-07-06 10:32:41,494 - INFO - Bot response sent to 4bcc76b9-dcf1-45b6-9167-e1fb49b44b90: I'm here to provide support. How can I assist you today? (Intent: Support, Confidence: 0.85)
+2025-07-06 10:32:41,495 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,499 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,605 - INFO - New session created: f0b19a05-c1dd-4d24-a7be-3a7e3e2566bd
+2025-07-06 10:32:41,607 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,610 - INFO - Message received from f0b19a05-c1dd-4d24-a7be-3a7e3e2566bd: I want my money back
+2025-07-06 10:32:41,611 - INFO - Bot response sent to f0b19a05-c1dd-4d24-a7be-3a7e3e2566bd: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:32:41,611 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,614 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,722 - INFO - New session created: b222d1ba-74fc-40f2-9cd9-8ab5dac08a23
+2025-07-06 10:32:41,725 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,728 - INFO - Message received from b222d1ba-74fc-40f2-9cd9-8ab5dac08a23: Request a refund for my ticket
+2025-07-06 10:32:41,729 - INFO - Bot response sent to b222d1ba-74fc-40f2-9cd9-8ab5dac08a23: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:32:41,729 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,732 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,838 - INFO - New session created: e50a71da-78a9-43c5-91c1-aed80232874a
+2025-07-06 10:32:41,840 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,843 - INFO - Message received from e50a71da-78a9-43c5-91c1-aed80232874a: I need to change my flight date
+2025-07-06 10:32:41,843 - INFO - Bot response sent to e50a71da-78a9-43c5-91c1-aed80232874a: I can help you change your booking. What modifications would you like to make? (Intent: Change, Confidence: 0.85)
+2025-07-06 10:32:41,844 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,846 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,954 - INFO - New session created: bf059b09-fb46-4cf5-aca5-2acdfee9d4e7
+2025-07-06 10:32:41,957 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:41,960 - INFO - Message received from bf059b09-fb46-4cf5-aca5-2acdfee9d4e7: Can I modify my booking?
+2025-07-06 10:32:41,961 - INFO - Bot response sent to bf059b09-fb46-4cf5-aca5-2acdfee9d4e7: I can help you change your booking. What modifications would you like to make? (Intent: Change, Confidence: 0.85)
+2025-07-06 10:32:41,961 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:41,964 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:41] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,072 - INFO - New session created: 466a1055-301d-4604-9561-fca852e0d702
+2025-07-06 10:32:42,075 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,078 - INFO - Message received from 466a1055-301d-4604-9561-fca852e0d702: I want to upgrade to business class
+2025-07-06 10:32:42,079 - INFO - Bot response sent to 466a1055-301d-4604-9561-fca852e0d702: I can assist with seat upgrades. Let me check available options for your flight. (Intent: Upgrade, Confidence: 0.9)
+2025-07-06 10:32:42,080 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,082 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,189 - INFO - New session created: 6b2c0e73-a86d-4086-b93f-f5407e7ed6f2
+2025-07-06 10:32:42,191 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,194 - INFO - Message received from 6b2c0e73-a86d-4086-b93f-f5407e7ed6f2: Can I get a premium seat?
+2025-07-06 10:32:42,195 - INFO - Bot response sent to 6b2c0e73-a86d-4086-b93f-f5407e7ed6f2: I can assist with seat upgrades. Let me check available options for your flight. (Intent: Upgrade, Confidence: 0.9)
+2025-07-06 10:32:42,196 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,198 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,307 - INFO - New session created: ccca5887-477f-4d45-bcee-8bbad21db36d
+2025-07-06 10:32:42,310 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,313 - INFO - Message received from ccca5887-477f-4d45-bcee-8bbad21db36d: I need to reschedule my flight
+2025-07-06 10:32:42,314 - INFO - Bot response sent to ccca5887-477f-4d45-bcee-8bbad21db36d: I can help you reschedule your flight. What new date and time would you prefer? (Intent: Reschedule, Confidence: 0.85)
+2025-07-06 10:32:42,314 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,317 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,424 - INFO - New session created: f7c1bfff-c5db-47cb-964b-2ea63a6b7a1b
+2025-07-06 10:32:42,425 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,428 - INFO - Message received from f7c1bfff-c5db-47cb-964b-2ea63a6b7a1b: Change my flight to a different time
+2025-07-06 10:32:42,429 - INFO - Bot response sent to f7c1bfff-c5db-47cb-964b-2ea63a6b7a1b: I can help you reschedule your flight. What new date and time would you prefer? (Intent: Reschedule, Confidence: 0.85)
+2025-07-06 10:32:42,429 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,431 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,538 - INFO - New session created: 7dc503e7-1cf1-42c8-ab8f-10d56e0c32c5
+2025-07-06 10:32:42,541 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,543 - INFO - Message received from 7dc503e7-1cf1-42c8-ab8f-10d56e0c32c5: How do I check in online?
+2025-07-06 10:32:42,544 - INFO - Bot response sent to 7dc503e7-1cf1-42c8-ab8f-10d56e0c32c5: I can help with check-in procedures. You can check in online up to 24 hours before your flight. (Intent: Check-in, Confidence: 0.9)
+2025-07-06 10:32:42,545 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,548 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,657 - INFO - New session created: 6237990c-bef2-4ce3-b351-0332e950d542
+2025-07-06 10:32:42,659 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,662 - INFO - Message received from 6237990c-bef2-4ce3-b351-0332e950d542: I need help with check-in
+2025-07-06 10:32:42,663 - INFO - Bot response sent to 6237990c-bef2-4ce3-b351-0332e950d542: I can help with check-in procedures. You can check in online up to 24 hours before your flight. (Intent: Check-in, Confidence: 0.9)
+2025-07-06 10:32:42,663 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,666 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,775 - INFO - New session created: 5243263b-20c4-4d40-ae11-8c8274068536
+2025-07-06 10:32:42,778 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,782 - INFO - Message received from 5243263b-20c4-4d40-ae11-8c8274068536: What gate is my flight boarding from?
+2025-07-06 10:32:42,783 - INFO - Bot response sent to 5243263b-20c4-4d40-ae11-8c8274068536: Boarding information will be displayed on airport screens and announced at the gate. (Intent: Boarding, Confidence: 0.85)
+2025-07-06 10:32:42,783 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,786 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,895 - INFO - New session created: d3194fe6-3ae0-495a-9f5f-45876ceb04ed
+2025-07-06 10:32:42,898 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:42,901 - INFO - Message received from d3194fe6-3ae0-495a-9f5f-45876ceb04ed: When does boarding start?
+2025-07-06 10:32:42,902 - INFO - Bot response sent to d3194fe6-3ae0-495a-9f5f-45876ceb04ed: Boarding information will be displayed on airport screens and announced at the gate. (Intent: Boarding, Confidence: 0.85)
+2025-07-06 10:32:42,902 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:42,905 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:42] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,013 - INFO - New session created: fbfe37a8-f3bd-4b4f-8604-b0cc5e7f6802
+2025-07-06 10:32:43,015 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,017 - INFO - Message received from fbfe37a8-f3bd-4b4f-8604-b0cc5e7f6802: I want a window seat
+2025-07-06 10:32:43,018 - INFO - Bot response sent to fbfe37a8-f3bd-4b4f-8604-b0cc5e7f6802: I can help you with seat selection. Would you like to choose your seats now? (Intent: Seating, Confidence: 0.9)
+2025-07-06 10:32:43,018 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,021 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,129 - INFO - New session created: b1d338e8-71be-4519-a9bf-3a32b6c543bb
+2025-07-06 10:32:43,132 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,134 - INFO - Message received from b1d338e8-71be-4519-a9bf-3a32b6c543bb: Can I select my seat?
+2025-07-06 10:32:43,136 - INFO - Bot response sent to b1d338e8-71be-4519-a9bf-3a32b6c543bb: I can help you with seat selection. Would you like to choose your seats now? (Intent: Seating, Confidence: 0.9)
+2025-07-06 10:32:43,136 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,138 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,247 - INFO - New session created: 95562ed2-c156-41bc-80ef-778b78e2c1d9
+2025-07-06 10:32:43,249 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,252 - INFO - Message received from 95562ed2-c156-41bc-80ef-778b78e2c1d9: What amenities are available on the flight?
+2025-07-06 10:32:43,254 - INFO - Bot response sent to 95562ed2-c156-41bc-80ef-778b78e2c1d9: Our flights offer various amenities including entertainment, Wi-Fi, and comfort features. (Intent: Amenities, Confidence: 0.8)
+2025-07-06 10:32:43,254 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,257 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,363 - INFO - New session created: 33ad219f-cce8-4923-b032-6df112a8810f
+2025-07-06 10:32:43,366 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,369 - INFO - Message received from 33ad219f-cce8-4923-b032-6df112a8810f: Do you have Wi-Fi on board?
+2025-07-06 10:32:43,370 - INFO - Bot response sent to 33ad219f-cce8-4923-b032-6df112a8810f: Boarding information will be displayed on airport screens and announced at the gate. (Intent: Boarding, Confidence: 0.85)
+2025-07-06 10:32:43,370 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,373 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,479 - INFO - New session created: f4777c81-3a3a-4c46-8def-428cf362da40
+2025-07-06 10:32:43,482 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,484 - INFO - Message received from f4777c81-3a3a-4c46-8def-428cf362da40: What meal options do you have?
+2025-07-06 10:32:43,485 - INFO - Bot response sent to f4777c81-3a3a-4c46-8def-428cf362da40: I can help you with meal options and special dietary requirements for your flight. (Intent: Meals, Confidence: 0.85)
+2025-07-06 10:32:43,485 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,488 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,592 - INFO - New session created: 5ac0b385-4add-4576-a847-2168e2fc43f6
+2025-07-06 10:32:43,595 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,597 - INFO - Message received from 5ac0b385-4add-4576-a847-2168e2fc43f6: I have dietary restrictions
+2025-07-06 10:32:43,598 - INFO - Bot response sent to 5ac0b385-4add-4576-a847-2168e2fc43f6: I can help you with meal options and special dietary requirements for your flight. (Intent: Meals, Confidence: 0.85)
+2025-07-06 10:32:43,598 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,601 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,710 - INFO - New session created: ed4102a9-d531-4b1d-9dcd-762f6b115d92
+2025-07-06 10:32:43,712 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,715 - INFO - Message received from ed4102a9-d531-4b1d-9dcd-762f6b115d92: Tell me about your flight schedules
+2025-07-06 10:32:43,716 - INFO - Bot response sent to ed4102a9-d531-4b1d-9dcd-762f6b115d92: I can help you with booking flights. What destination are you looking for? (Session: ed4102a9...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:32:43,716 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,720 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,824 - INFO - New session created: 101c2960-d075-43dd-8374-9455666286f8
+2025-07-06 10:32:43,827 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,830 - INFO - Message received from 101c2960-d075-43dd-8374-9455666286f8: I need information about baggage allowance
+2025-07-06 10:32:43,831 - INFO - Bot response sent to 101c2960-d075-43dd-8374-9455666286f8: I'm happy to provide information. What specific details would you like to know? (Intent: Information, Confidence: 0.75)
+2025-07-06 10:32:43,831 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,834 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,941 - INFO - New session created: 5467ca73-d500-4d16-8a0a-5784d90aef36
+2025-07-06 10:32:43,944 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:43,946 - INFO - Message received from 5467ca73-d500-4d16-8a0a-5784d90aef36: How do I join your frequent flyer program?
+2025-07-06 10:32:43,948 - INFO - Bot response sent to 5467ca73-d500-4d16-8a0a-5784d90aef36: I can help you with our loyalty program. Are you interested in joining or have questions about your membership? (Intent: Loyalty Programs, Confidence: 0.85)
+2025-07-06 10:32:43,948 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:43,951 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:43] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,058 - INFO - New session created: 5f12a068-418e-42cc-9b9e-6a10bfb004a9
+2025-07-06 10:32:44,060 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,062 - INFO - Message received from 5f12a068-418e-42cc-9b9e-6a10bfb004a9: What are the benefits of membership?
+2025-07-06 10:32:44,063 - INFO - Bot response sent to 5f12a068-418e-42cc-9b9e-6a10bfb004a9: I can help you with our loyalty program. Are you interested in joining or have questions about your membership? (Intent: Loyalty Programs, Confidence: 0.85)
+2025-07-06 10:32:44,063 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,065 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,173 - INFO - New session created: bc17c60c-b2e0-4f42-a5c9-4d53cdaaceae
+2025-07-06 10:32:44,176 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,178 - INFO - Message received from bc17c60c-b2e0-4f42-a5c9-4d53cdaaceae: How can I redeem my miles?
+2025-07-06 10:32:44,179 - INFO - Bot response sent to bc17c60c-b2e0-4f42-a5c9-4d53cdaaceae: Let me help you with reward redemption and earning opportunities. (Intent: Rewards, Confidence: 0.8)
+2025-07-06 10:32:44,179 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,182 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,290 - INFO - New session created: 1c8f1327-8e44-4525-a02a-99b52020e099
+2025-07-06 10:32:44,292 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,295 - INFO - Message received from 1c8f1327-8e44-4525-a02a-99b52020e099: What rewards can I earn?
+2025-07-06 10:32:44,296 - INFO - Bot response sent to 1c8f1327-8e44-4525-a02a-99b52020e099: I understand you said: 'What rewards can I earn?'. Could you please provide more details so I can assist you better? (Intent: Inquiry, Confidence: 0.6)
+2025-07-06 10:32:44,297 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,299 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,406 - INFO - New session created: 3f3f5ba3-bc58-4cb4-b1b7-38076be96733
+2025-07-06 10:32:44,408 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,410 - INFO - Message received from 3f3f5ba3-bc58-4cb4-b1b7-38076be96733: Do you have any special deals?
+2025-07-06 10:32:44,411 - INFO - Bot response sent to 3f3f5ba3-bc58-4cb4-b1b7-38076be96733: Check out our current promotions and special offers for great deals on flights. (Intent: Promotions, Confidence: 0.85)
+2025-07-06 10:32:44,411 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,413 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,521 - INFO - New session created: 43882ab5-157f-4dfc-b203-cec55bc8edc3
+2025-07-06 10:32:44,524 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,526 - INFO - Message received from 43882ab5-157f-4dfc-b203-cec55bc8edc3: Are there any current promotions?
+2025-07-06 10:32:44,527 - INFO - Bot response sent to 43882ab5-157f-4dfc-b203-cec55bc8edc3: Check out our current promotions and special offers for great deals on flights. (Intent: Promotions, Confidence: 0.85)
+2025-07-06 10:32:44,527 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,530 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,639 - INFO - New session created: 3fcec389-da2f-4010-ad9d-8e21849584ab
+2025-07-06 10:32:44,641 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,644 - INFO - Message received from 3fcec389-da2f-4010-ad9d-8e21849584ab: What offers are available?
+2025-07-06 10:32:44,646 - INFO - Bot response sent to 3fcec389-da2f-4010-ad9d-8e21849584ab: I can show you our latest offers and deals. What type of travel are you planning? (Intent: Offers, Confidence: 0.8)
+2025-07-06 10:32:44,646 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,650 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,758 - INFO - New session created: 04f81666-bd89-4962-8460-26da292a2b2f
+2025-07-06 10:32:44,762 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,764 - INFO - Message received from 04f81666-bd89-4962-8460-26da292a2b2f: Show me your latest deals
+2025-07-06 10:32:44,765 - INFO - Bot response sent to 04f81666-bd89-4962-8460-26da292a2b2f: Check out our current promotions and special offers for great deals on flights. (Intent: Promotions, Confidence: 0.85)
+2025-07-06 10:32:44,766 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,768 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,877 - INFO - New session created: c92a26f7-9223-435d-bc4b-00eb98744302
+2025-07-06 10:32:44,879 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,882 - INFO - Message received from c92a26f7-9223-435d-bc4b-00eb98744302: Can I get a discount on my ticket?
+2025-07-06 10:32:44,883 - INFO - Bot response sent to c92a26f7-9223-435d-bc4b-00eb98744302: I can help you find discounted fares and ways to save on your booking. (Intent: Discounts, Confidence: 0.85)
+2025-07-06 10:32:44,883 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:44,885 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:44,994 - INFO - New session created: 25ed84a3-4975-4a74-8e68-a814c9f7adb7
+2025-07-06 10:32:44,996 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:44] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,001 - INFO - Message received from 25ed84a3-4975-4a74-8e68-a814c9f7adb7: Do you offer student discounts?
+2025-07-06 10:32:45,002 - INFO - Bot response sent to 25ed84a3-4975-4a74-8e68-a814c9f7adb7: I can help you find discounted fares and ways to save on your booking. (Intent: Discounts, Confidence: 0.85)
+2025-07-06 10:32:45,002 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,006 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,113 - INFO - New session created: f125fd41-d726-4844-8ab6-0b58ad6192c0
+2025-07-06 10:32:45,116 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,119 - INFO - Message received from f125fd41-d726-4844-8ab6-0b58ad6192c0: What is your cancellation policy?
+2025-07-06 10:32:45,120 - INFO - Bot response sent to f125fd41-d726-4844-8ab6-0b58ad6192c0: I can explain our policies regarding booking, cancellation, and travel requirements. (Intent: Policies, Confidence: 0.8)
+2025-07-06 10:32:45,121 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,123 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,232 - INFO - New session created: 7c604d0d-65f1-422e-b3af-7780fa13dabe
+2025-07-06 10:32:45,235 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,238 - INFO - Message received from 7c604d0d-65f1-422e-b3af-7780fa13dabe: Tell me about your refund policy
+2025-07-06 10:32:45,240 - INFO - Bot response sent to 7c604d0d-65f1-422e-b3af-7780fa13dabe: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:32:45,240 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,243 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,353 - INFO - New session created: 6d970292-8592-44f9-b4e0-8e785e7c987a
+2025-07-06 10:32:45,355 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,358 - INFO - Message received from 6d970292-8592-44f9-b4e0-8e785e7c987a: How do I change my booking?
+2025-07-06 10:32:45,359 - INFO - Bot response sent to 6d970292-8592-44f9-b4e0-8e785e7c987a: I can guide you through our procedures step by step. What process do you need help with? (Intent: Procedures, Confidence: 0.8)
+2025-07-06 10:32:45,359 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,362 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,470 - INFO - New session created: b8c37643-775e-4b3b-b291-74196ee93d5d
+2025-07-06 10:32:45,472 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,474 - INFO - Message received from b8c37643-775e-4b3b-b291-74196ee93d5d: What's the process for upgrades?
+2025-07-06 10:32:45,475 - INFO - Bot response sent to b8c37643-775e-4b3b-b291-74196ee93d5d: I can assist with seat upgrades. Let me check available options for your flight. (Intent: Upgrade, Confidence: 0.9)
+2025-07-06 10:32:45,475 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,478 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,586 - INFO - New session created: e7decf2e-de64-427d-9659-01220d21abf3
+2025-07-06 10:32:45,588 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,591 - INFO - Message received from e7decf2e-de64-427d-9659-01220d21abf3: What are the travel requirements?
+2025-07-06 10:32:45,592 - INFO - Bot response sent to e7decf2e-de64-427d-9659-01220d21abf3: I can provide information about travel regulations and requirements for your destination. (Intent: Regulations, Confidence: 0.8)
+2025-07-06 10:32:45,592 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,595 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,704 - INFO - New session created: 74b4f5b2-bbbf-4701-b94a-108890189b84
+2025-07-06 10:32:45,707 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,710 - INFO - Message received from 74b4f5b2-bbbf-4701-b94a-108890189b84: Do I need a visa for this destination?
+2025-07-06 10:32:45,711 - INFO - Bot response sent to 74b4f5b2-bbbf-4701-b94a-108890189b84: Hello! Welcome to our airline customer service. How can I help you today? (Session: 74b4f5b2...) (Intent: Support, Confidence: 0.9)
+2025-07-06 10:32:45,711 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,715 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,824 - INFO - New session created: bd812f1e-f6f7-4dfe-b317-a8dd36ad6ed4
+2025-07-06 10:32:45,827 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,830 - INFO - Message received from bd812f1e-f6f7-4dfe-b317-a8dd36ad6ed4: What items are prohibited in carry-on?
+2025-07-06 10:32:45,831 - INFO - Bot response sent to bd812f1e-f6f7-4dfe-b317-a8dd36ad6ed4: Hello! Welcome to our airline customer service. How can I help you today? (Session: bd812f1e...) (Intent: Support, Confidence: 0.9)
+2025-07-06 10:32:45,832 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,835 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,943 - INFO - New session created: 9d6d2694-e971-4cc4-8742-d136d7fcaff0
+2025-07-06 10:32:45,946 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:45,950 - INFO - Message received from 9d6d2694-e971-4cc4-8742-d136d7fcaff0: Tell me about security procedures
+2025-07-06 10:32:45,951 - INFO - Bot response sent to 9d6d2694-e971-4cc4-8742-d136d7fcaff0: I can help you understand security procedures and what items are allowed in carry-on and checked baggage. (Intent: Security, Confidence: 0.85)
+2025-07-06 10:32:45,951 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:45,955 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:45] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:46,064 - INFO - New session created: a5b733ab-1e6d-4664-8315-0c12123457fc
+2025-07-06 10:32:46,066 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:46,068 - INFO - Message received from a5b733ab-1e6d-4664-8315-0c12123457fc: Is it safe to fly during the pandemic?
+2025-07-06 10:32:46,069 - INFO - Bot response sent to a5b733ab-1e6d-4664-8315-0c12123457fc: Safety is our top priority. I can provide information about our safety measures and procedures. (Intent: Safety, Confidence: 0.85)
+2025-07-06 10:32:46,069 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:46,072 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:46,181 - INFO - New session created: 53e265cf-beb7-4716-a962-7f04c9dfe7b2
+2025-07-06 10:32:46,183 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:32:46,186 - INFO - Message received from 53e265cf-beb7-4716-a962-7f04c9dfe7b2: What safety measures do you have?
+2025-07-06 10:32:46,187 - INFO - Bot response sent to 53e265cf-beb7-4716-a962-7f04c9dfe7b2: Safety is our top priority. I can provide information about our safety measures and procedures. (Intent: Safety, Confidence: 0.85)
+2025-07-06 10:32:46,187 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:32:46,190 - INFO - 127.0.0.1 - - [06/Jul/2025 10:32:46] "GET / HTTP/1.1" 200 -
+2025-07-06 10:34:47,188 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:47] "GET / HTTP/1.1" 200 -
+2025-07-06 10:34:49,879 - INFO - Cleared session: 0481ff73-a3be-4baf-a50e-a0f860c20c46
+2025-07-06 10:34:49,879 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:49] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:34:49,882 - INFO - New session created: 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9
+2025-07-06 10:34:49,885 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:49] "GET / HTTP/1.1" 200 -
+2025-07-06 10:34:52,653 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: Book a flight
+2025-07-06 10:34:52,655 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can help you with booking flights. What destination are you looking for? (Session: 2e6a50c5...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:34:52,655 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:52] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:34:52,660 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:52] "GET / HTTP/1.1" 200 -
+2025-07-06 10:34:55,519 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: Cancel booking
+2025-07-06 10:34:55,521 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can assist you with canceling your booking. Please provide your booking reference number. (Intent: Cancellation, Confidence: 0.9)
+2025-07-06 10:34:55,521 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:55] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:34:55,526 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:55] "GET / HTTP/1.1" 200 -
+2025-07-06 10:34:56,896 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: Check-in help
+2025-07-06 10:34:56,898 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can help with check-in procedures. You can check in online up to 24 hours before your flight. (Intent: Check-in, Confidence: 0.9)
+2025-07-06 10:34:56,898 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:56] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:34:56,903 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:56] "GET / HTTP/1.1" 200 -
+2025-07-06 10:34:58,109 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: Refund request
+2025-07-06 10:34:58,112 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:34:58,112 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:58] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:34:58,116 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:58] "GET / HTTP/1.1" 200 -
+2025-07-06 10:34:59,176 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: Seat upgrade
+2025-07-06 10:34:59,178 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can assist with seat upgrades. Let me check available options for your flight. (Intent: Upgrade, Confidence: 0.9)
+2025-07-06 10:34:59,178 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:34:59,182 - INFO - 127.0.0.1 - - [06/Jul/2025 10:34:59] "GET / HTTP/1.1" 200 -
+2025-07-06 10:35:00,411 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: Meal options
+2025-07-06 10:35:00,415 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can help you with meal options and special dietary requirements for your flight. (Intent: Meals, Confidence: 0.85)
+2025-07-06 10:35:00,415 - INFO - 127.0.0.1 - - [06/Jul/2025 10:35:00] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:35:00,420 - INFO - 127.0.0.1 - - [06/Jul/2025 10:35:00] "GET / HTTP/1.1" 200 -
+2025-07-06 10:35:09,557 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: can I book for my seat
+2025-07-06 10:35:09,559 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can help you with seat selection. Would you like to choose your seats now? (Intent: Seating, Confidence: 0.9)
+2025-07-06 10:35:09,559 - INFO - 127.0.0.1 - - [06/Jul/2025 10:35:09] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:35:09,563 - INFO - 127.0.0.1 - - [06/Jul/2025 10:35:09] "GET / HTTP/1.1" 200 -
+2025-07-06 10:39:00,443 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/enhanced_ui.py', reloading
+2025-07-06 10:39:00,462 - INFO -  * Restarting with stat
+2025-07-06 10:39:00,602 - INFO - Database initialized successfully
+2025-07-06 10:39:00,624 - WARNING -  * Debugger is active!
+2025-07-06 10:39:00,635 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:39:08,185 - INFO - Message received from 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I need cashback for booking flight tickets
+2025-07-06 10:39:08,186 - INFO - Bot response sent to 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9: I can help you with booking flights. What destination are you looking for? (Session: 2e6a50c5...) (Intent: Booking, Confidence: 0.85)
+2025-07-06 10:39:08,186 - INFO - 127.0.0.1 - - [06/Jul/2025 10:39:08] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:39:08,200 - INFO - 127.0.0.1 - - [06/Jul/2025 10:39:08] "GET / HTTP/1.1" 200 -
+2025-07-06 10:39:57,406 - INFO - Cleared session: 2e6a50c5-7aed-4e5c-bddf-be09f0d178c9
+2025-07-06 10:39:57,407 - INFO - 127.0.0.1 - - [06/Jul/2025 10:39:57] "[32mGET /api/clear_session HTTP/1.1[0m" 302 -
+2025-07-06 10:39:57,415 - INFO - New session created: b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c
+2025-07-06 10:39:57,418 - INFO - 127.0.0.1 - - [06/Jul/2025 10:39:57] "GET / HTTP/1.1" 200 -
+2025-07-06 10:40:00,012 - INFO - Message received from b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: hi
+2025-07-06 10:40:00,014 - INFO - Bot response sent to b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: Hello! Welcome to our airline customer service. How can I help you today? (Session: b6239bdb...) (Intent: Support, Confidence: 0.9)
+2025-07-06 10:40:00,014 - INFO - 127.0.0.1 - - [06/Jul/2025 10:40:00] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:40:00,017 - INFO - 127.0.0.1 - - [06/Jul/2025 10:40:00] "GET / HTTP/1.1" 200 -
+2025-07-06 10:40:12,888 - INFO - Message received from b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: I need help with the refund
+2025-07-06 10:40:12,891 - INFO - Bot response sent to b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: I can help you with refund requests. Please provide your booking details and reason for the refund. (Intent: Refund, Confidence: 0.9)
+2025-07-06 10:40:12,891 - INFO - 127.0.0.1 - - [06/Jul/2025 10:40:12] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:40:12,896 - INFO - 127.0.0.1 - - [06/Jul/2025 10:40:12] "GET / HTTP/1.1" 200 -
+2025-07-06 10:40:27,141 - INFO - Message received from b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: HDGFBN is the PNR
+2025-07-06 10:40:27,142 - INFO - Bot response sent to b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: I understand you said: 'HDGFBN is the PNR'. Could you please provide more details so I can assist you better? (Intent: Inquiry, Confidence: 0.6)
+2025-07-06 10:40:27,143 - INFO - 127.0.0.1 - - [06/Jul/2025 10:40:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:40:27,153 - INFO - 127.0.0.1 - - [06/Jul/2025 10:40:27] "GET / HTTP/1.1" 200 -
+2025-07-06 10:43:06,898 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/airline_test.py', reloading
+2025-07-06 10:43:06,923 - INFO -  * Restarting with stat
+2025-07-06 10:43:07,071 - INFO - Database initialized successfully
+2025-07-06 10:43:07,094 - WARNING -  * Debugger is active!
+2025-07-06 10:43:07,104 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:43:20,440 - INFO -  * Detected change in '/Users/nsureka/Documents/gitrepo/IISc Capstone Project/enhanced_ui.py', reloading
+2025-07-06 10:43:20,461 - INFO -  * Restarting with stat
+2025-07-06 10:43:20,612 - INFO - Database initialized successfully
+2025-07-06 10:43:20,634 - WARNING -  * Debugger is active!
+2025-07-06 10:43:20,646 - INFO -  * Debugger PIN: 485-358-472
+2025-07-06 10:50:52,570 - INFO - 127.0.0.1 - - [06/Jul/2025 10:50:52] "GET / HTTP/1.1" 200 -
+2025-07-06 10:50:53,828 - INFO - 127.0.0.1 - - [06/Jul/2025 10:50:53] "GET / HTTP/1.1" 200 -
+2025-07-06 10:50:54,198 - INFO - 127.0.0.1 - - [06/Jul/2025 10:50:54] "GET / HTTP/1.1" 200 -
+2025-07-06 10:50:54,360 - INFO - 127.0.0.1 - - [06/Jul/2025 10:50:54] "GET / HTTP/1.1" 200 -
+2025-07-06 10:50:54,513 - INFO - 127.0.0.1 - - [06/Jul/2025 10:50:54] "GET / HTTP/1.1" 200 -
+2025-07-06 10:50:56,059 - INFO - Message received from b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: Meal options
+2025-07-06 10:50:56,060 - INFO - Bot response sent to b6239bdb-f68d-48b4-9c2b-a6fa7c21dc0c: I can help you with meal options and special dietary requirements for your flight. (Intent: Meals, Confidence: 0.85)
+2025-07-06 10:50:56,061 - INFO - 127.0.0.1 - - [06/Jul/2025 10:50:56] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 10:50:56,067 - INFO - 127.0.0.1 - - [06/Jul/2025 10:50:56] "GET / HTTP/1.1" 200 -
+2025-07-06 10:58:36,063 - INFO - 127.0.0.1 - - [06/Jul/2025 10:58:36] "GET / HTTP/1.1" 200 -

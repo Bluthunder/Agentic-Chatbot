@@ -1,0 +1,92 @@
+[
+  {
+    "test": "Database Schema",
+    "success": true,
+    "message": "All required tables exist",
+    "timestamp": "2025-07-06T10:22:46.606408"
+  },
+  {
+    "test": "Messages Table Structure",
+    "success": true,
+    "message": "All columns present",
+    "timestamp": "2025-07-06T10:22:46.606444"
+  },
+  {
+    "test": "Initial Page Load",
+    "success": true,
+    "message": "Page loads successfully",
+    "timestamp": "2025-07-06T10:22:46.609861"
+  },
+  {
+    "test": "Session Cookie Creation",
+    "success": true,
+    "message": "Session ID: 4baea59e...",
+    "timestamp": "2025-07-06T10:22:46.609879"
+  },
+  {
+    "test": "Message Sending",
+    "success": true,
+    "message": "Message sent successfully",
+    "timestamp": "2025-07-06T10:22:46.617471"
+  },
+  {
+    "test": "Message Display",
+    "success": true,
+    "message": "Message appears in chat",
+    "timestamp": "2025-07-06T10:22:46.617487"
+  },
+  {
+    "test": "Database Persistence",
+    "success": true,
+    "message": "Message stored in database",
+    "timestamp": "2025-07-06T10:22:46.617748"
+  },
+  {
+    "test": "Intent Classification - greeting",
+    "success": false,
+    "message": "Expected: greeting, Got: general",
+    "timestamp": "2025-07-06T10:22:46.623343"
+  },
+  {
+    "test": "Intent Classification - support",
+    "success": false,
+    "message": "Expected: support, Got: general",
+    "timestamp": "2025-07-06T10:22:46.628967"
+  },
+  {
+    "test": "Intent Classification - billing",
+    "success": false,
+    "message": "Expected: billing, Got: general",
+    "timestamp": "2025-07-06T10:22:46.635320"
+  },
+  {
+    "test": "Intent Classification - farewell",
+    "success": false,
+    "message": "Expected: farewell, Got: general",
+    "timestamp": "2025-07-06T10:22:46.643590"
+  },
+  {
+    "test": "Intent Classification - general",
+    "success": true,
+    "message": "Confidence: 0.6",
+    "timestamp": "2025-07-06T10:22:46.649821"
+  },
+  {
+    "test": "Stats API",
+    "success": true,
+    "message": "Sessions: 2, Messages: 12",
+    "timestamp": "2025-07-06T10:22:46.652098"
+  },
+  {
+    "test": "Session Isolation",
+    "success": true,
+    "message": "Sessions properly isolated",
+    "timestamp": "2025-07-06T10:22:46.672770"
+  },
+  {
+    "test": "Clear Session",
+    "success": true,
+    "message": "Session cleared successfully",
+    "timestamp": "2025-07-06T10:22:46.687412"
+  }
+]
