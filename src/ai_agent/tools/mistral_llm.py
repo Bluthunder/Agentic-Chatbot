@@ -16,8 +16,24 @@ class MistralLLM(BaseLLM):
         self.temperature = temperature
 
     def chat(self, messages: list[dict]) -> str:
-        response = self.llm.create_chat_completion(messages=messages)
-        return response['choices'][0]['message']['content']
+        # Separate system and user/assistant messages
+        system_prompt = ""
+        chat_turns = []
+
+        for msg in messages:
+            if msg["role"] == "system":
+                system_prompt = msg["content"]
+            elif msg["role"] == "user":
+                chat_turns.append(f"[INST] {msg['content']} [/INST]")
+            elif msg["role"] == "assistant":
+                chat_turns.append(msg["content"])  # assistant reply continuation
+
+        # Combine prompt
+        full_prompt = f"<s>[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n"
+        full_prompt += "\n".join(chat_turns)
+
+        output = self.llm(full_prompt.strip(), max_tokens=self.max_tokens, temperature=self.temperature)
+        return output["choices"][0]["text"].strip()
 
 
     def name(self) -> str:
