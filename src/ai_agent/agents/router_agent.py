@@ -1,86 +1,66 @@
-from ai_agent.agents.flight_status_agent import FlightStatusAgent
-from ai_agent.agents.booking_agent import BookingAgent
-from ai_agent.state.conversation_state import ConversationState
+import json
 from ai_agent.tools.llm_loader import get_llm
+from ai_agent.state.conversation_state import ConversationState
+
 
 class RouterAgent:
     def __init__(self):
         self.llm = get_llm()
-        self.agents = {
-            "flight_status": FlightStatusAgent(),
-            "booking": BookingAgent()
-        }
-        self.valid_intents = set(self.agents.keys())
+        self.classifier_prompt = """You are a classification agent for a travel assistant system.
 
-# review few shot prompt with detailed examples. 
-    def detect_intent(self, query: str) -> str:
-        system_prompt = ("""
-            You are a highly specialized intent classification engine for a travel and event booking platform. Your primary function is to analyze user input and categorize it into one of the predefined intents.
+Given a user's query, your job is to detect and return ONLY the following three attributes in JSON format:
 
-            **Your Task:**
-                Read the user's query and classify its primary intent. The user might be asking to book flights, cancel flight, refund and flight status
-                **Available Intents:**
-                    1.  booking: The user expresses a clear desire to start a new booking process. This includes requests to find, book, reserve, purchase, or get something.
-                    2.  out_of_scope: The user's query is not related to initiating a booking. This includes general chit-chat, questions about the weather, requests to cancel or modify an existing booking, or checking a booking status.
-            
-            **Instructions:**
-                - Focus strictly on the user's primary goal.
-                - A request to "cancel my flight" is NOT a `booking` intent.
-                - A question like "what is the status of my booking?" is NOT a `booking` intent.
-                - A general statement like "I want to go to Paris" should be interpreted as an intent to start a `booking`.
-                - Your response MUST be a JSON object with a single key, "intent".
+- intent: One of ["booking", "cancellation", "flight_status", "meal_preference", "greeting", "complaint", "unknown"]
+- sentiment: One of ["positive", "neutral", "negative"]
+- topic: A short one-word category like "booking", "cancellation", "flight", "meals", "support", or "unknown"
 
-                **Examples:**
+⚠️ VERY IMPORTANT: Your response MUST ONLY contain a single JSON object on one line. DO NOT include explanations, greetings, or anything else.
 
-                User: "Book me a flight to New York for tomorrow."
-                {"intent": "booking"}
+Example:
 
-                User: "I need a hotel room in London from the 5th to the 10th."
-                {"intent": "booking"}
+{"intent": "booking", "sentiment": "neutral", "topic": "booking"}
+"""
 
-                User: "Can you find me a rental car at LAX airport?"
-                {"intent": "booking"}
+        self.response_prompt = """You are a helpful travel assistant. Based on the user's query, provide a helpful response in natural language.
+"""
 
-                User: "I need to cancel my reservation."
-                {"intent": "out_of_scope"}
-
-                User: "Tell me a joke."
-                {"intent": "out_of_scope"}
-
-                User: "Hi there"
-                {"intent": "out_of_scope"}           
-                            
-""")
+    def classify(self, query):
+        messages = [
+            {"role": "system", "content": self.classifier_prompt},
+            {"role": "user", "content": query},
+        ]
+        raw_response = self.llm.chat(messages)
         try:
-            response = self.llm.chat([
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": query}
-            ])
-            print(f"[RouterAgent] Raw response: {response}")
-            intent = response.strip().lower()
-            if intent not in self.agents:
-                intent = "unknown"
-            return intent
-        except Exception as e:
-            print(f"[RouterAgent] Error during intent detection: {e}")
-            return "unknown"
+            json_output = json.loads(raw_response.strip())
+            return json_output
+        except json.JSONDecodeError:
+            print(f"⚠️ JSON Decode Error: {e} | Raw Response: {raw_response}") # will change this logger
+            return {"intent": "unknown" , "sentiment": "neutral", "topic": "unknown"}
 
+    def respond(self, query):
+        messages = [
+            {"role": "system", "content": self.response_prompt},
+            {"role": "user", "content": query},
+        ]
+        return self.llm.chat(messages)
 
     def run(self, state: ConversationState) -> ConversationState:
-        """
-        Route to appropriate sub-agent based on user intent.
-        """
-        state.agent_name = "RouterAgent"
-        intent = self.detect_intent(state.user_query)
-        state.intent = intent
+        
+        classification = self.classify(state.user_query)
+        state.intent = classification.get("intent", "unknown")
+        state.topic = classification.get("topic", "unknown")
+        state.sentiment = classification.get("sentiment", "neutral")
+        state.agent_name = self.route_to(state.intent)
+        state.agent_response = self.respond(state.user_query)
 
-        agent = self.agents.get(intent)
+        return state
 
-        if not agent:
-            state.agent_response = (
-                "Sorry, I couldn't understand your request. "
-                "Please ask about flight status or booking."
-            )
-            return state
+    def route_to(self, intent: str) -> str:
+        intent_to_agent = {
+            "booking": "BookingAgent",
+            "flight_status": "FlightStatusAgent",
+            "cancellation": "CancellationAgent",
+            "meal_preference": "MealPreferenceAgent"
+        }
+        return intent_to_agent.get(intent, "RouterAgent")
 
-        return agent.run(state)
