@@ -9,7 +9,9 @@ streamlit
 tavily-python
 python-dotenv==1.0.1
 llama-cpp-python==0.2.72
-uvicorn==0.29.0
+uvicorn[standard]==0.29.0
 fastapi==0.110.1
 loguru==0.7.2
 pytest
+fastapi
+websockets
