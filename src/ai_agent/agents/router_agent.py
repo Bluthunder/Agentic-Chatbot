@@ -1,6 +1,7 @@
 import json
 from ai_agent.tools.llm_loader import get_llm
 from ai_agent.state.conversation_state import ConversationState
+import asyncio
 
 
 class RouterAgent:
@@ -27,34 +28,35 @@ Example:
         self.response_prompt = """You are a helpful travel assistant. Based on the user's query, provide a helpful response in natural language.
 """
 
-    def classify(self, query):
+    async def classify(self, query):
         messages = [
             {"role": "system", "content": self.classifier_prompt},
             {"role": "user", "content": query},
         ]
-        raw_response = self.llm.chat(messages)
+        
         try:
+            raw_response = await asyncio.to_thread(self.llm.chat, messages)
             json_output = json.loads(raw_response.strip())
             return json_output
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
             print(f" JSON Decode Error: {e} | Raw Response: {raw_response}") # will change this logger
             return {"intent": "unknown" , "sentiment": "neutral", "topic": "unknown"}
 
-    def respond(self, query):
+    async def respond(self, query):
         messages = [
             {"role": "system", "content": self.response_prompt},
             {"role": "user", "content": query},
         ]
-        return self.llm.chat(messages)
+        return await asyncio.to_thread(self.llm.chat, messages)
 
-    def run(self, state: ConversationState) -> ConversationState:
+    async def run(self, state: ConversationState) -> ConversationState:
         
-        classification = self.classify(state.user_query)
+        classification = await self.classify(state.user_query)
         state.intent = classification.get("intent", "unknown")
         state.topic = classification.get("topic", "unknown")
         state.sentiment = classification.get("sentiment", "neutral")
         state.agent_name = self.route_to(state.intent)
-        state.agent_response = self.respond(state.user_query)
+        state.agent_response = await self.respond(state.user_query)
 
         return state
 
