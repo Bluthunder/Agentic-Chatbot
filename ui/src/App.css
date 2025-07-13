@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full white background */
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centering wrapper */
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Chat UI container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  background-color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.chat-header {
+  padding: 1rem;
+  background-color: #1e88e5;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Chat messages area */
+.chat-window {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #000;
+}
+
+/* Messages */
+.chat-message {
+  max-width: 70%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: #1e88e5;
+  color: white;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #333;
+  color: white;
+}
+
+/* Input area */
+.chat-input-area {
+  display: flex;
+  padding: 1rem;
+  background-color: #000;
+  border-top: 1px solid #333;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.chat-input-area input:focus {
+  outline: 2px solid #1e88e5;
+}
+
+.chat-input-area button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat-input-area button:hover {
+  background-color: #1565c0;
+}
