@@ -6,6 +6,9 @@ from ai_agent.state.conversation_state import ConversationState
 class RouterAgent:
     def __init__(self):
         self.llm = get_llm()
+
+        ## Need to move this to prompt template 
+        
         self.classifier_prompt = """You are a classification agent for a travel assistant system.
 
 Given a user's query, your job is to detect and return ONLY the following three attributes in JSON format:
@@ -34,7 +37,7 @@ Example:
             json_output = json.loads(raw_response.strip())
             return json_output
         except json.JSONDecodeError:
-            print(f"⚠️ JSON Decode Error: {e} | Raw Response: {raw_response}") # will change this logger
+            print(f" JSON Decode Error: {e} | Raw Response: {raw_response}") # will change this logger
             return {"intent": "unknown" , "sentiment": "neutral", "topic": "unknown"}
 
     def respond(self, query):
