@@ -1,12 +1,25 @@
+import random
+import string
 from ..state.conversation_state import ConversationState
+
+def generate_dummy_pnr():
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
 
 def search_flights(state: ConversationState) -> str:
     """
-    Mocked function to simulate a flight search.
+    Mocked flight search and booking confirmation using user input.
     """
-    # Extract mock info from query (you can later do NER or parsing)
+    origin = getattr(state, "origin", "DEL")
+    destination = getattr(state, "destination", "CDG")
+    travel_date = getattr(state, "travel_date", "in the next few days")
+
+    airlines = ["IndiGo", "Air India", "Vistara", "Lufthansa", "Qatar Airways", "Etihad", "Emirates"]
+    selected_airline = random.choice(airlines)
+    dummy_pnr = generate_dummy_pnr()
+
     return (
-        "✅ Found flights:\n"
-        "1. Indigo 6E-203 | DEL → BOM | 9:00 AM - 11:10 AM | ₹4,200\n"
-        "2. Air India AI-101 | DEL → BOM | 10:30 AM - 12:45 PM | ₹4,800"
+        f"✈️ Flight booked from {origin} to {destination} on {travel_date}!\n"
+        f"🛫 Airline: {selected_airline}\n"
+        f"🎟️ PNR: {dummy_pnr}\n"
+        f"Would you like hotel suggestions or help with local attractions?"
     )
