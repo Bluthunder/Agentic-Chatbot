@@ -6,6 +6,9 @@ from ai_agent.tools.llm_loader import get_llm
 from src.ai_agent.utils.iata_codes import CITY_TO_IATA
 import traceback
 
+from ai_agent.utils.logging_util import get_logger
+logger = get_logger(__name__)
+
 
 class BookingAgent(Agent):
 
@@ -49,6 +52,7 @@ class BookingAgent(Agent):
                 )
             elif any(k in query for k in ["book", "flight", "ticket"]):
                 print(f"📤 BookingAgent extracted: origin={origin}, destination={destination}, date={travel_date}")
+                logger.info(f"📤 BookingAgent extracted: origin={origin}, destination={destination}, date={travel_date}")
 
                 result = search_flights(state)
                 state.agent_response = result

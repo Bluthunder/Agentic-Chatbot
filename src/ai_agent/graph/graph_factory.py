@@ -1,10 +1,12 @@
 from langgraph.graph import StateGraph, END
 from ai_agent.state.conversation_state import ConversationState
-# from langgraph.pydantic import register_type
 
 async def end_node(state: ConversationState) -> ConversationState:
     print("✅ Reached end node with agent_response:", state.agent_response)
     return state
+
+def completion_or_router(agent, name: str):
+    return lambda state: "router" if not agent.is_complete(state) else "end"
 
 def build_agent_graph(route_node, booking_node, flight_status_node):
     # register_type(ConversationState)
@@ -28,12 +30,24 @@ def build_agent_graph(route_node, booking_node, flight_status_node):
     # Set entry and routing logic
     graph.set_entry_point("router")
     graph.set_finish_point("end")
+    # graph.add_conditional_edges(
+    #     "router",
+    #     route_fn,
+    #     {"booking": "booking", 
+    #      "flight_status": "flight_status", 
+    #      "end": "end"}
+    # )
+
     graph.add_conditional_edges(
-        "router",
-        route_fn,
-        {"booking": "booking", 
-         "flight_status": "flight_status", 
-         "end": "end"}
+    "flight_status",
+    lambda state: "router" if not flight_status_node.is_complete(state) else "end",
+    {"router": "router", "end": "end"}
+    )
+
+    graph.add_conditional_edges(
+        "booking",
+        lambda state: "router" if not booking_node.is_complete(state) else "end",
+        {"router": "router", "end": "end"}
     )
 
     graph.add_edge("booking", "router")

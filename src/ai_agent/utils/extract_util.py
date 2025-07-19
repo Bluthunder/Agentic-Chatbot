@@ -53,3 +53,17 @@ def extract_flight_details(query: str):
 
     print(f"🧠 Extracted flight details: origin={origin}, destination={destination}, date={travel_date}")
     return origin, destination, travel_date
+
+
+def extract_flight_number(query: str):
+    """
+    Extracts a flight number like 'EY 236' or 'AI123' from a query.
+
+    Returns:
+        flight_number (str or None)
+    """
+    pattern = r"\b([A-Z]{2})\s?(\d{2,4})\b"
+    match = re.search(pattern, query.upper())
+    if match:
+        return f"{match.group(1)} {match.group(2)}"
+    return None

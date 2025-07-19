@@ -27,3 +27,5 @@ class ConversationState(BaseModel):
     flight_options: Optional[List[Dict]] = None
     booking_confirmed: Optional[bool] = False
 
+    flight_number: Optional[str] = None
+

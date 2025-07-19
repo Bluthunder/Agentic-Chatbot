@@ -6,6 +6,8 @@ from ai_agent.agents.booking_agent import BookingAgent
 from ai_agent.agents.flight_status_agent import FlightStatusAgent
 import pdb
 
+from ai_agent.utils.logging_util import get_logger
+logger = get_logger(__name__)
 
 class RouterAgent:
     def __init__(self):
@@ -72,6 +74,7 @@ Example:
 
             if not response:
                 print("[RouterAgent] LLM responded with None")
+                logger.debug(f"[RouterAgent] LLM responded with None")
                 state.agent_response = "I am sorry, I didn't understand."
                 return state
                 # return "I am sorry, i didn;t understand"
@@ -81,6 +84,7 @@ Example:
         
         except Exception as ex:
             print(f'[RouterAgent] error is {ex}')
+            logger.exception(f'[RouterAgent] error is {ex}')
             state.agent_response = " I am experiencing issue, try again later"
             return state
         
@@ -118,6 +122,8 @@ Example:
             except Exception as e:
 
                 print(f"{last_agent_name} crashed: {e}")
+                logger.exception(f"{last_agent_name} crashed: {e}")
+
                 state = ConversationState(user_query=state.user_query)
                 state.agent_name = last_agent_name
                 state.agent_response = f"Oops! {last_agent_name} failed."
@@ -141,6 +147,7 @@ Example:
                 state = await agent.run(state)
             except Exception as e:
                 print(f"{routed_agent_name} Error: {e}")
+                logger.exception(f"{routed_agent_name} Error: {e}")
                 state = ConversationState(user_query=state.user_query)
                 state.agent_name = routed_agent_name
                 state.agent_response = f"Oops! Something went wrong in {routed_agent_name}."
@@ -148,6 +155,7 @@ Example:
 
         else:
             print(f"[RouterAgent] No agent found for: {routed_agent_name}, responding directly")
+            logger.debug(f"[RouterAgent] No agent found for: {routed_agent_name}, responding directly")
             state.agent_name = "RouterAgent"
             state.agent_response = await self.respond(state.user_query)
 
