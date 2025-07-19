@@ -1,81 +1,19 @@
 from ai_agent.agents.base_agent import Agent
+from ai_agent.utils.extract_util import extract_flight_details
 from ..tools.flight_api import search_flights
 from ..state.conversation_state import ConversationState
-from langchain_core.tools import tool
 from ai_agent.tools.llm_loader import get_llm
-import spacy
-from dateutil.parser import parse as date_parse
 from src.ai_agent.utils.iata_codes import CITY_TO_IATA
 import traceback
-import re
-
-nlp = spacy.load("en_core_web_sm")
 
 
 class BookingAgent(Agent):
-    nlp = spacy.load("en_core_web_sm")
 
     def __init__(self, llm=None):
         # self.llm = llm  # Optional LLM for prompt handling
         super().__init__(name="BookingAgent", llm=get_llm())
         self.intent= "flight_booking"
         self.topic="book_flight"
-
-    def extract_entities_fallback(self, user_query: str):
-        
-        city_matches = re.findall(r"(?:from\s+)?([A-Za-z\s]+?)\s+to\s+([A-Za-z\s]+)", user_query, re.IGNORECASE)
-        cities = list(city_matches[0]) if city_matches else []
-
-        # Date pattern
-        date_matches = re.findall(
-            r"\b\d{1,2}\s*(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|"
-            r"May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|"
-            r"Nov(?:ember)?|Dec(?:ember)?)\b", user_query, re.IGNORECASE)
-        dates = date_matches
-
-        return cities, dates
-
-
-    
-    def extract_details(self, query:str):
-
-        query = query.lower()
-        doc = self.nlp(query)
-
-        ner_cities = [ent.text for ent in doc.ents if ent.label_ in ["GPE", "LOC"]]
-        ner_dates = [ent.text for ent in doc.ents if ent.label_ == "DATE"]
-
-        fallback_cities, fallback_dates = self.extract_entities_fallback(query)
-
-        if not ner_cities or len(ner_cities) < 2:
-            cities  = fallback_cities
-        else:
-            cities = ner_cities
-
-        if not ner_dates:
-            dates = fallback_dates
-        else:
-            dates = ner_dates
-
-        origin_city = cities[0].lower() if len(cities) > 0 else None
-        destination_city = cities[1].lower() if len(cities) > 1 else None
-
-        origin = CITY_TO_IATA.get(origin_city, "DEL") if origin_city else "DEL"
-        destination = CITY_TO_IATA.get(destination_city, "JFK") if destination_city else "JFK"
-
-        travel_date = None
-        if dates:
-            try:
-                dt = date_parse(dates[0], fuzzy=True)
-                travel_date = dt.strftime("%Y-%m-%d")
-            except Exception:
-                pass
-
-        print(f"🧠 NER result: cities={cities}, dates={dates}")
-
-        return origin, destination, travel_date
-    
-
 
 
     async def run(self, state: ConversationState) -> ConversationState:
@@ -90,7 +28,7 @@ class BookingAgent(Agent):
             state.intent = self.intent
             state.topic = self.topic
             
-            origin, destination, travel_date =  self.extract_details(query=query)
+            origin, destination, travel_date =  extract_flight_details(query)
             state.origin = origin or state.origin
             state.destination = destination or state.destination
             state.travel_date = travel_date or state.travel_date
