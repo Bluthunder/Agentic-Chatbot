@@ -7,6 +7,7 @@ import spacy
 from dateutil.parser import parse as date_parse
 from src.ai_agent.utils.iata_codes import CITY_TO_IATA
 import traceback
+import re
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -17,8 +18,23 @@ class BookingAgent(Agent):
     def __init__(self, llm=None):
         # self.llm = llm  # Optional LLM for prompt handling
         super().__init__(name="BookingAgent", llm=get_llm())
-        self.intent="flight_booking"
+        self.intent= "flight_booking"
         self.topic="book_flight"
+
+    def extract_entities_fallback(self, user_query: str):
+        
+        city_matches = re.findall(r"(?:from\s+)?([A-Za-z\s]+?)\s+to\s+([A-Za-z\s]+)", user_query, re.IGNORECASE)
+        cities = list(city_matches[0]) if city_matches else []
+
+        # Date pattern
+        date_matches = re.findall(
+            r"\b\d{1,2}\s*(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|"
+            r"May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|"
+            r"Nov(?:ember)?|Dec(?:ember)?)\b", user_query, re.IGNORECASE)
+        dates = date_matches
+
+        return cities, dates
+
 
     
     def extract_details(self, query:str):
@@ -26,8 +42,20 @@ class BookingAgent(Agent):
         query = query.lower()
         doc = self.nlp(query)
 
-        cities = [ent.text for ent in doc.ents if ent.label_ in ["GPE", "LOC"]]
-        dates = [ent.text for ent in doc.ents if ent.label_ == "DATE"]
+        ner_cities = [ent.text for ent in doc.ents if ent.label_ in ["GPE", "LOC"]]
+        ner_dates = [ent.text for ent in doc.ents if ent.label_ == "DATE"]
+
+        fallback_cities, fallback_dates = self.extract_entities_fallback(query)
+
+        if not ner_cities or len(ner_cities) < 2:
+            cities  = fallback_cities
+        else:
+            cities = ner_cities
+
+        if not ner_dates:
+            dates = fallback_dates
+        else:
+            dates = ner_dates
 
         origin_city = cities[0].lower() if len(cities) > 0 else None
         destination_city = cities[1].lower() if len(cities) > 1 else None
@@ -48,6 +76,8 @@ class BookingAgent(Agent):
         return origin, destination, travel_date
     
 
+
+
     async def run(self, state: ConversationState) -> ConversationState:
         """
         Handles booking-related queries using mock flight booking api.
@@ -61,14 +91,14 @@ class BookingAgent(Agent):
             state.topic = self.topic
             
             origin, destination, travel_date =  self.extract_details(query=query)
-            state.origin = origin
-            state.destination = destination
-            state.travel_date = travel_date
+            state.origin = origin or state.origin
+            state.destination = destination or state.destination
+            state.travel_date = travel_date or state.travel_date
 
             missing = []
-            if not origin or origin == "DEL":
+            if not origin:
                 missing.append("departure city")
-            if not destination or destination == "JFK":
+            if not destination:
                 missing.append("destination city")
             if not travel_date:
                 missing.append("travel date")
@@ -79,7 +109,7 @@ class BookingAgent(Agent):
                     + ", ".join(missing)
                     + "."
                 )
-            elif "book" in query or "flight" in query or "ticket" in query:
+            elif any(k in query for k in ["book", "flight", "ticket"]):
                 print(f"📤 BookingAgent extracted: origin={origin}, destination={destination}, date={travel_date}")
 
                 result = search_flights(state)

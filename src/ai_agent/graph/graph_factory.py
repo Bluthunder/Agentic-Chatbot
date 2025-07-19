@@ -18,7 +18,7 @@ def build_agent_graph(route_node, booking_node, flight_status_node):
 
     def route_fn(state: ConversationState) -> str:
         intent = getattr(state, "intent", "").lower()
-        if intent == "booking":
+        if intent == ["booking", "flight_search", "ticket", "flight_booking"]:
             return "booking"
         elif intent == "flight_status":
             return "flight_status"
