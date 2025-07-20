@@ -9,7 +9,7 @@ include .env
 export
 
 run-dev:
-	PYTHONPATH=$(PYTHONPATH) uvicorn $(APP_MODULE) --reload --port $(PORT)
+	PYTHONPATH=$(PYTHONPATH) uvicorn $(APP_MODULE) --reload --port $(PORT) --timeout-keep-alive 300
 
 run-prod:
 	PYTHONPATH=$(PYTHONPATH) uvicorn $(APP_MODULE) --port $(PORT) --host 0.0.0.0 --workers 2

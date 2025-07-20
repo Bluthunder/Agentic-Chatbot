@@ -1,0 +1,16 @@
+CITY_TO_IATA = {
+    "delhi": "DEL",
+    "new delhi": "DEL",
+    "mumbai": "BOM",
+    "bangalore": "BLR",
+    "bengaluru": "BLR",
+    "abu dhabi": "AUH",
+    "dubai": "DXB",
+    "paris": "CDG",
+    "london": "LHR",
+    "new york": "JFK",
+    "san francisco": "SFO",
+    "tokyo": "HND",
+    "chennai": "MAA",
+    "kolkata": "CCU",
+}
