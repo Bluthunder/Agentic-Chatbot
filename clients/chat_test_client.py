@@ -31,7 +31,7 @@ async def chat():
                 else:
 
                     print(f"Agent [{data['routed_to']}]:", data['response'])
-                    logger.info(f"Agent {data['routed_to']} ---> {data['response']}")
+                    # logger.info(f"Agent {data['routed_to']} ---> {data['response']}")
 
             except websockets.exceptions.ConnectionClosedOK:
                 print("WebSocket connection closed by server.")

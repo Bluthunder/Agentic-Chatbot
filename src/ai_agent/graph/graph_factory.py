@@ -1,5 +1,10 @@
 from langgraph.graph import StateGraph, END
+from ai_agent.agents.booking_agent import BookingAgent
+from ai_agent.agents.flight_status_agent import FlightStatusAgent
 from ai_agent.state.conversation_state import ConversationState
+
+flagent = FlightStatusAgent()
+bkagent = BookingAgent()
 
 async def end_node(state: ConversationState) -> ConversationState:
     print("✅ Reached end node with agent_response:", state.agent_response)
@@ -9,7 +14,6 @@ def completion_or_router(agent, name: str):
     return lambda state: "router" if not agent.is_complete(state) else "end"
 
 def build_agent_graph(route_node, booking_node, flight_status_node):
-    # register_type(ConversationState)
     graph = StateGraph(ConversationState, debug=True)
 
     # Register nodes
@@ -25,7 +29,7 @@ def build_agent_graph(route_node, booking_node, flight_status_node):
         elif intent == "flight_status":
             return "flight_status"
         else:
-            return "end"  # generic/greeting/unknown cases
+            return "end"  
 
     # Set entry and routing logic
     graph.set_entry_point("router")
@@ -38,15 +42,27 @@ def build_agent_graph(route_node, booking_node, flight_status_node):
          "end": "end"}
     )
 
+    # graph.add_conditional_edges(
+    # "flight_status",
+    # lambda state: "router" if not flight_status_node.is_complete(state) else "end",
+    # {"router": "router", "end": "end"}
+    # )
+
     graph.add_conditional_edges(
     "flight_status",
-    lambda state: "router" if not flight_status_node.is_complete(state) else "end",
+    lambda state: "router" if not flagent.is_complete(state) else "end",
     {"router": "router", "end": "end"}
     )
 
+    # graph.add_conditional_edges(
+    #     "booking",
+    #     lambda state: "router" if not booking_node.is_complete(state) else "end",
+    #     {"router": "router", "end": "end"}
+    # )
+
     graph.add_conditional_edges(
         "booking",
-        lambda state: "router" if not booking_node.is_complete(state) else "end",
+        lambda state: "router" if not bkagent.is_complete(state) else "end",
         {"router": "router", "end": "end"}
     )
 
