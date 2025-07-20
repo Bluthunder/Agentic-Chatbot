@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Airway - Premium Airline Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-plane"></i>
+                Skyline Airway
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="chat-support-btn" onclick="openChatbot()">
+                <i class="fas fa-comments"></i>
+                Chat Support
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Skyline Airway</h1>
+            <p>Experience luxury travel with our premium airline services. Fly with comfort, style, and reliability.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Book Flight</a>
+                <a href="#destinations" class="btn-secondary">View Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="destination-content">
+                        <h3>New York</h3>
+                        <p>The city that never sleeps. Experience the vibrant culture and iconic landmarks.</p>
+                        <div class="destination-price">From $299</div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <i class="fas fa-torii-gate"></i>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Tokyo</h3>
+                        <p>Discover the perfect blend of tradition and innovation in Japan's capital.</p>
+                        <div class="destination-price">From $599</div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <i class="fas fa-eiffel-tower"></i>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Paris</h3>
+                        <p>The city of love and lights. Experience romance and culture at its finest.</p>
+                        <div class="destination-price">From $449</div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <i class="fas fa-sydney-opera-house"></i>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Sydney</h3>
+                        <p>Explore the stunning harbor city with its iconic Opera House and beautiful beaches.</p>
+                        <div class="destination-price">From $799</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Premium Flights</h3>
+                    <p>Experience luxury in the skies with our premium flight services and amenities.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Concierge Service</h3>
+                    <p>Personalized assistance for all your travel needs, from booking to arrival.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Gourmet Dining</h3>
+                    <p>Enjoy world-class cuisine prepared by renowned chefs during your flight.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Luxury Seating</h3>
+                    <p>Recline in comfort with our premium seating options and entertainment systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Skyline Airway</h2>
+                    <p>Founded with a vision to redefine luxury air travel, Skyline Airway has been at the forefront of innovation in the aviation industry. Our commitment to excellence, safety, and customer satisfaction has made us a trusted name in premium air travel.</p>
+                    <p>With a fleet of state-of-the-art aircraft and a team of experienced professionals, we ensure that every journey with us is memorable and comfortable. From the moment you book your ticket to the time you reach your destination, we're dedicated to providing you with an exceptional travel experience.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1M+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99%</h3>
+                        <p>Safety Record</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Skyline Airway. All rights reserved. | Premium Airline Services</p>
+        </div>
+    </footer>
+
+    <!-- Chat Support Float Button -->
+    <div class="chat-support-float" onclick="openChatbot()">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-header-left">
+                <div class="chatbot-avatar">
+                    <span>B</span>
+                </div>
+                <div class="chatbot-info">
+                    <h3>BARRY</h3>
+                    <p>Skyline Airway Assistant</p>
+                </div>
+            </div>
+            <div class="chatbot-controls">
+                <button class="chatbot-btn" onclick="toggleChatbotSize()" title="Expand/Collapse">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="chatbot-btn close-btn" onclick="closeChatbot()" title="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="chat-messages" class="chat-messages">
+            <!-- Messages will be added here dynamically -->
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Type your message..." disabled>
+            <button id="chat-send" onclick="sendMessage()" disabled>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

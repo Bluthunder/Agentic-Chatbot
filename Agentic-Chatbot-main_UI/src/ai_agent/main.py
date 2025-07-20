@@ -3,8 +3,8 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
-from ai_agent.state.conversation_state import ConversationState
-from ai_agent.agents.router_agent import RouterAgent
+from .state.conversation_state import ConversationState
+from .agents.router_agent import RouterAgent
 
 def main():
     query = input("✈️  Ask your airline support question: ")

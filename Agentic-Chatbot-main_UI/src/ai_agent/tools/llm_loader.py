@@ -1,4 +1,4 @@
-from ai_agent.configs.config import LLM_BACKEND, MISTRAL_MODEL_PATH
+from ..configs.config import LLM_BACKEND, MISTRAL_MODEL_PATH
 from .mistral_llm import MistralLLM
 from .base_llm import BaseLLM
 

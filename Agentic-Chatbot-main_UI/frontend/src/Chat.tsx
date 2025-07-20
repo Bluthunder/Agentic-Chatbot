@@ -13,7 +13,7 @@ interface Message {
   };
 }
 
-const WS_URL = 'ws://localhost:8000/api/v1/chat'; // Updated to match backend route
+const WS_URL = 'ws://localhost:8000/api/v1/chat'; // Updated to match backend route [ -->backend]
 
 const Chat: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
