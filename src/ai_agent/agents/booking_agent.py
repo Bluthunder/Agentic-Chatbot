@@ -5,10 +5,18 @@ from ..state.conversation_state import ConversationState
 from ai_agent.tools.llm_loader import get_llm
 from src.ai_agent.utils.iata_codes import CITY_TO_IATA
 import traceback
+from langsmith import traceable
+from dotenv import load_dotenv
+import os
+
 
 from ai_agent.utils.logging_util import get_logger
 logger = get_logger(__name__)
 
+load_dotenv()
+
+api_key = os.environ.get("LANGSMITH_API_KEY")
+trace = os.environ.get("LANGSMITH_TRACING")
 
 class BookingAgent(Agent):
 
@@ -18,7 +26,7 @@ class BookingAgent(Agent):
         self.intent= "flight_booking"
         self.topic="book_flight"
 
-
+    @traceable(name='Booking Agent Run', tags=['agents'], metadata={"description":"booking agent run"})
     async def run(self, state: ConversationState) -> ConversationState:
         """
         Handles booking-related queries using mock flight booking api.
@@ -67,6 +75,7 @@ class BookingAgent(Agent):
 
         return state
     
+    @traceable(name='Booking Agent Run', tags=['agents'], metadata={"description": "Is complete"})
     def is_complete(self, state: ConversationState) -> bool:
         return all([
             getattr(state, "origin", None),

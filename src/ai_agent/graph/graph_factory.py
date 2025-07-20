@@ -30,13 +30,13 @@ def build_agent_graph(route_node, booking_node, flight_status_node):
     # Set entry and routing logic
     graph.set_entry_point("router")
     graph.set_finish_point("end")
-    # graph.add_conditional_edges(
-    #     "router",
-    #     route_fn,
-    #     {"booking": "booking", 
-    #      "flight_status": "flight_status", 
-    #      "end": "end"}
-    # )
+    graph.add_conditional_edges(
+        "router",
+        route_fn,
+        {"booking": "booking", 
+         "flight_status": "flight_status", 
+         "end": "end"}
+    )
 
     graph.add_conditional_edges(
     "flight_status",
@@ -50,8 +50,8 @@ def build_agent_graph(route_node, booking_node, flight_status_node):
         {"router": "router", "end": "end"}
     )
 
-    graph.add_edge("booking", "router")
-    graph.add_edge("flight_status", "router")
+    # graph.add_edge("booking", "router")
+    # graph.add_edge("flight_status", "router")
 
 
     return graph.compile()

@@ -1,10 +1,19 @@
 import json
+import os
+
+from dotenv import load_dotenv
 from ai_agent.tools.llm_loader import get_llm
 from ai_agent.state.conversation_state import ConversationState
 import asyncio
 from ai_agent.agents.booking_agent import BookingAgent
 from ai_agent.agents.flight_status_agent import FlightStatusAgent
 import pdb
+from langsmith import traceable
+
+load_dotenv()
+
+api_key = os.environ.get("LANGSMITH_API_KEY")
+trace = os.environ.get("LANGSMITH_TRACING")
 
 from ai_agent.utils.logging_util import get_logger
 logger = get_logger(__name__)
@@ -45,6 +54,7 @@ Example:
         }
 
 
+    @traceable(name="Classification", tags=['agents'], metadata={"description": "router classification"})
     async def classify(self, query):
         messages = [
             {"role": "system", "content": self.classifier_prompt},
@@ -62,6 +72,7 @@ Example:
             return {"intent": "unknown" , "sentiment": "neutral", "topic": "unknown"}
         
 
+    @traceable(name="Response", tags=['agents'], metadata={"description": "router response"})
     async def respond(self, query, state):
         messages = [
             {"role": "system", "content": self.response_prompt},
@@ -96,6 +107,7 @@ Example:
             return "self"
     
 
+    @traceable(name="Router Agent", tags=['agents'], metadata={"description": "router main"})
     async def run(self, state: ConversationState) -> ConversationState:
         
 

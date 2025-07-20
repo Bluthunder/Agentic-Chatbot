@@ -1,6 +1,10 @@
 import asyncio
 import websockets
 import json
+# from langsmith import traceable
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
 from ai_agent.utils.logging_util import get_logger
 logger = get_logger(__name__)
