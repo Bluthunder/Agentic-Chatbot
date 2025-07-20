@@ -6,8 +6,11 @@ from src.ai_agent.utils.iata_codes import CITY_TO_IATA
 
 
 def extract_entities_fallback(query: str):
-    # City pattern: "from Delhi to Paris", "Delhi to Paris"
-    city_matches = re.findall(r"(?:from\s+)?([A-Za-z\s]+?)\s+to\s+([A-Za-z\s]+)", query, re.IGNORECASE)
+    # City pattern: "from Delhi to Paris", "Delhi to Paris", "Book a flight from Bangalore to Paris"
+    city_matches = re.findall(r"from\s+([A-Za-z\s]+?)\s+to\s+([A-Za-z\s]+?)(?:\s+on|\s+for|\s+in|\s+$)", query, re.IGNORECASE)
+    if not city_matches:
+        # Try alternative pattern: "Bangalore to Paris"
+        city_matches = re.findall(r"([A-Za-z\s]+?)\s+to\s+([A-Za-z\s]+?)(?:\s+on|\s+for|\s+in|\s+$)", query, re.IGNORECASE)
     cities = list(city_matches[0]) if city_matches else []
 
     # Date pattern: 17 March, 5 Jan
