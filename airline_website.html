@@ -302,21 +302,22 @@
             height: 700px;
         }
 
-        .chat-overlay {
+        .chat-backdrop {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
             z-index: 999;
             display: none;
+            backdrop-filter: blur(3px);
         }
 
         .chat-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 15px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -324,28 +325,52 @@
 
         .chat-header h3 {
             margin: 0;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
         }
 
-        .chat-controls {
+        .chat-header-buttons {
             display: flex;
             gap: 10px;
             align-items: center;
         }
 
-        .expand-chat, .close-chat {
-            background: none;
+        .chat-header-btn {
+            background: rgba(255, 255, 255, 0.2);
             border: none;
             color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-            padding: 5px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
-            transition: background-color 0.3s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: background 0.3s;
         }
 
-        .expand-chat:hover, .close-chat:hover {
-            background: rgba(255,255,255,0.2);
+        .chat-header-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .close-chat {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .close-chat:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .chat-messages {
@@ -622,18 +647,16 @@
         </div>
     </footer>
 
-    <!-- Chat Overlay -->
-    <div class="chat-overlay" id="chatOverlay" onclick="closeChat()"></div>
-    
     <!-- Chat Widget -->
+    <div class="chat-backdrop" id="chatBackdrop" onclick="toggleChat()"></div>
     <div class="chat-widget">
         <button class="chat-button" onclick="toggleChat()">💬</button>
         <div class="chat-container" id="chatContainer">
             <div class="chat-header">
                 <h3>🤖 AI Travel Assistant</h3>
-                <div class="chat-controls">
-                    <button class="expand-chat" onclick="toggleExpand()" title="Expand/Collapse">⤢</button>
-                    <button class="close-chat" onclick="closeChat()" title="Close">×</button>
+                <div class="chat-header-buttons">
+                    <button class="chat-header-btn" onclick="toggleExpand()" title="Expand/Collapse">⤢</button>
+                    <button class="close-chat" onclick="toggleChat()" title="Close">×</button>
                 </div>
             </div>
             <div class="chat-messages" id="chatMessages">
@@ -663,29 +686,34 @@
         // Chat functionality
         function toggleChat() {
             const chatContainer = document.getElementById('chatContainer');
-            const chatOverlay = document.getElementById('chatOverlay');
+            const chatBackdrop = document.getElementById('chatBackdrop');
             const isVisible = chatContainer.style.display === 'flex';
             
             if (!isVisible) {
                 chatContainer.style.display = 'flex';
-                chatOverlay.style.display = 'block';
+                chatBackdrop.style.display = 'block';
                 connectWebSocket();
             } else {
-                closeChat();
+                chatContainer.style.display = 'none';
+                chatBackdrop.style.display = 'none';
+                // Reset to normal size when closing
+                chatContainer.classList.remove('expanded');
             }
-        }
-
-        function closeChat() {
-            const chatContainer = document.getElementById('chatContainer');
-            const chatOverlay = document.getElementById('chatOverlay');
-            chatContainer.style.display = 'none';
-            chatOverlay.style.display = 'none';
-            chatContainer.classList.remove('expanded');
         }
 
         function toggleExpand() {
             const chatContainer = document.getElementById('chatContainer');
+            const expandBtn = document.querySelector('.chat-header-btn');
+            
             chatContainer.classList.toggle('expanded');
+            
+            if (chatContainer.classList.contains('expanded')) {
+                expandBtn.textContent = '⤢';
+                expandBtn.title = 'Collapse';
+            } else {
+                expandBtn.textContent = '⤢';
+                expandBtn.title = 'Expand';
+            }
         }
 
         function connectWebSocket() {
