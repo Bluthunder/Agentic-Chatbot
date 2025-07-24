@@ -1,17 +1,20 @@
-langchain==0.1.20
-langgraph==0.0.47
-langchain-core==0.1.52
+langchain
+langgraph
+langchain-core
 langchain_community
 langchain_groq
 langchain_openai
 faiss-cpu
 streamlit
 tavily-python
-python-dotenv==1.0.1
-llama-cpp-python==0.2.72
+python-dotenv
+llama-cpp-python
 uvicorn[standard]==0.29.0
-fastapi==0.110.1
+fastapi==0.115.1
 loguru==0.7.2
 pytest
-fastapi
 websockets
+requests
+spacy
+redis
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl

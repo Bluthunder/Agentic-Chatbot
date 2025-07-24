@@ -15,6 +15,7 @@ class MistralLLM(BaseLLM):
         self.max_tokens = max_tokens
         self.temperature = temperature
 
+
     def chat(self, messages: list[dict]) -> str:
         # Separate system and user/assistant messages
         system_prompt = ""
@@ -31,8 +32,18 @@ class MistralLLM(BaseLLM):
         # Combine prompt
         full_prompt = f"<s>[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n"
         full_prompt += "\n".join(chat_turns)
+        print("==== MistralLLM.chat full prompt ====")
+        print(full_prompt)
+        print("=====================================")
+
 
         output = self.llm(full_prompt.strip(), max_tokens=self.max_tokens, temperature=self.temperature)
+
+        print("==== MistralLLM.chat raw output ====")
+        print(output)
+        print("===================================")
+        print(output["choices"][0]["text"].strip())
+        print("===================================")
         return output["choices"][0]["text"].strip()
 
 
