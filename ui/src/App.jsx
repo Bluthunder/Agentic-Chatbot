@@ -11,6 +11,8 @@ import ChatWidget from './components/ChatWidget';
 function App() {
 
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+
 
 // Chat functionality
 /**function toggleChat() {
@@ -40,19 +42,9 @@ const toggleChat = () => {
 
 
  function toggleExpand() {
-    const chatContainer = document.getElementById('chatContainer');
-    const expandBtn = document.querySelector('.chat-header-btn');
-    
-    chatContainer.classList.toggle('expanded');
-    
-    if (chatContainer.classList.contains('expanded')) {
-        expandBtn.textContent = '⤢';
-        expandBtn.title = 'Collapse';
-    } else {
-        expandBtn.textContent = '⤢';
-        expandBtn.title = 'Expand';
-    }
+  setIsExpanded(prev => !prev);
 }
+
   return (
     <>
       <div className="chat-backdrop" id="chatBackdrop" onClick={toggleChat}></div>
@@ -63,7 +55,7 @@ const toggleChat = () => {
         <Destinations />
         <Services />
         <Footer/>
-        { isChatOpen && <ChatWidget toggleChat={toggleChat} toggleExpand={toggleExpand}/>}
+        { isChatOpen && <ChatWidget toggleChat={toggleChat} toggleExpand={toggleExpand} isExpanded={isExpanded}/>}
 
     </>
   );

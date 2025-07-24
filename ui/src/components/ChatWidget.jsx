@@ -4,8 +4,9 @@ import ChatMessages from './ChatMessages';
 import TypingIndicator from './TypingIndicator';
 import ChatInput from './ChatInput';
 import './ChatWidget.css';
+import barryImg from '../assets/BarryPilot.png';
 
- const ChatWidget = ({toggleChat, toggleExpand}) => {
+ const ChatWidget = ({toggleChat, toggleExpand, isExpanded}) => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -97,7 +98,7 @@ import './ChatWidget.css';
 
     setMessages((prev) => [
       ...prev,
-      { sender: 'bot', text: response, metadata }
+      { sender: 'bot', text: response }
     ]);
   };
 
@@ -160,7 +161,7 @@ import './ChatWidget.css';
   };
 
   return (
-    <div className="chat-widget-popup">
+    <div className={`chat-widget-popup ${isExpanded ? 'expanded' : ''}`}>
     <div className="chat-container" id="chatContainer">
       <div className="chat-header">
         <div style={{display: 'flex', justifyContent: 'space-between'}}>
@@ -174,7 +175,7 @@ import './ChatWidget.css';
             </div>
         </div>
         
-        <h1>🤖 Barry</h1>
+        <h1 style ={{display:'flex', justifyContent:'center'}}><img src={barryImg} style={{ width: '35px', height: '35px', marginTop: '4px' }} />Barry</h1>
         <p>AI Powered Travel Assistant</p>
       </div>
 
@@ -187,7 +188,7 @@ import './ChatWidget.css';
         )}
         {messages.map((msg, idx) => (
           <div key={idx} className={`message ${msg.sender}`}>
-            <div className="message-avatar">{msg.sender === 'user' ? '👤' : '🤖'}</div>
+            <div className="message-avatar">{msg.sender === 'user' ? '🧑' : '👨‍✈️'}</div>
             <div className="message-content">
               {
                 renderMessageText(msg.text)

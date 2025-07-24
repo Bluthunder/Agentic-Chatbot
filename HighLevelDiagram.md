@@ -3,7 +3,7 @@
 graph TD
     %% UI Layer
     subgraph UI["🖥️ User Interface Layer"]
-        A1["User Interface - React/Streamlit"]
+        A1["User Interface - React App"]
     end
     
     %% API Layer
@@ -13,7 +13,7 @@ graph TD
     end
     
     %% Downstream Agents
-    subgraph AGENTS["🤖 Intelligent Agents"]
+    subgraph AGENTS["Intelligent Agents"]
         A4a["BookingAgent"]
         A4b["PostBookingAgent"]
         A4c["FlightStatusAgent"]
@@ -21,22 +21,28 @@ graph TD
     end
     
     %% Model Inference
-    subgraph MODEL["🧠 AI Model Layer"]
+    subgraph MODEL["AI Model Layer"]
         B1["Mistral LLM - finetuned"]
     end
     
     %% State Layer
-    subgraph STATE["💾 Data Storage Layer"]
+    subgraph STATE["Data Storage Layer"]
         C1["Redis - Short-term State"]
-        C2["PostgreSQL - Long-term Logs"]
+        C2["**PostgreSQL - Long-term Logs"]
     end
     
     %% Monitoring Layer
-    subgraph MONITOR["📊 Observability Layer"]
-        D1["Prometheus Exporter"]
-        D2["Grafana Dashboards"]
-        D3["OpenTelemetry Tracer"]
+    subgraph MONITOR["Observability Layer"]
+        D1["Langsmith trace"]
+        D2["Langsmith Dashboards"]
     end
+
+    %% RAG Layer
+    subgraph RAG["RAG Pipeline"]
+        E1["Data Processing and Embedding"]
+        E2["Chroma DB"]
+    end
+
     
     %% Flow
     A1 -->|POST /chat| A2
@@ -52,10 +58,13 @@ graph TD
     A4d -->|Complaint workflow| B1
     A3 -->|Session state| C1
     A2 -->|Save chat logs| C2
-    A2 -->|Metrics| D1
-    A2 -->|Trace| D3
-    D1 --> D2
-    D3 --> D2
+    A2 -->|Metrics| D2
+    A2 -->|Trace|D1
+    E1 --> E2
+    A3 -->|Grounding User Query Context| E2 
+    E2 --> A3
+
+    
     
     %% Enhanced Color Styling
     classDef uiClass fill:#2196f3,stroke:#0d47a1,stroke-width:3px,color:#fff

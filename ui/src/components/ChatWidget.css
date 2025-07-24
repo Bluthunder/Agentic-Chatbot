@@ -14,6 +14,13 @@
   animation: slideInUp 0.3s ease;
 }
 
+.chat-widget-popup.expanded {
+  width: 30vw;
+  height: 60vh;
+  bottom: 100px;
+  right: 60px;
+}
+
 @keyframes slideInUp {
   from {
     opacity: 0;
