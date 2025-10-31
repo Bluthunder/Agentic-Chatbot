@@ -49,6 +49,14 @@ Agentic-Chatbot/
 │   │   ├── nodes/            # Nodes for specific tasks (e.g., booking, flight status)
 │   │   ├── state/            # Conversation state management
 │   │   └── utils/            # Utility functions (e.g., Redis helpers)
+├── ui/
+│   ├── src/                  # React-based frontend source code
+│   ├── public/               # Static assets for the UI
+│   └── package.json          # Frontend dependencies
+├── test/
+│   ├── test_booking_agent.py # Unit tests for BookingAgent
+│   ├── test_router_agent.py  # Unit tests for RouterAgent
+│   └── ...                   # Other test files
 ├── .env                      # Environment variables
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
@@ -132,7 +140,7 @@ The project uses a `.env` file to manage configuration. Below are the key variab
 ### REST Endpoints
 
 - **Root Endpoint**:
- ```bash
+  ```bash
   GET /
   ```
   Returns the status of the chatbot.
@@ -142,6 +150,12 @@ The project uses a `.env` file to manage configuration. Below are the key variab
   GET /history/{session_id}
   ```
   Retrieves the conversation history for a given session.
+
+- **Chat WebSocket**:
+  ```bash
+  ws://<host>:<port>/chat
+  ```
+  Establishes a WebSocket connection for real-time chat with the bot.
 
 ---
 
