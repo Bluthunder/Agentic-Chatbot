@@ -184,3 +184,5 @@ pyrightconfig.json
 
 # Model
 models/
+
+.DS_Store
